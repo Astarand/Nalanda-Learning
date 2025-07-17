@@ -217,7 +217,7 @@ export default function Header() {
       <header className="header-area header-three-area">
         <div className="container">
           <div className="header__main">
-            <a href="index.html" className="logo">
+            <a href="/" className="logo">
               <Image
                 src="/images/logo/logo.png"
                 alt="logo"
@@ -229,38 +229,41 @@ export default function Header() {
               <nav>
                 <ul>
                   <li>
-                    <a href="/">Home</a>
+                    <Link href="/">Home</Link>
                   </li>
                   <li>
-                    <a href="/about">About Us</a>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="/services">
+                    <Link href="/services">
                       Services <i className="fa-solid fa-angle-down"></i>
-                    </a>
+                    </Link>
                     <ul className="sub-menu">
                       <li>
-                        <a href="#">NELTT</a>
+                        <Link href="/mepc">MEPSC</Link>
                       </li>
                       <li>
-                        <a href="#">NVOCO</a>
+                        <Link href="/enrich">Enrich</Link>
                       </li>
                       <li>
-                        <a href="#">Galileo & Obrizum</a>
+                        <Link href="/little-laureates">Little Laureates</Link>
+                      </li>
+                      <li>
+                        <Link href="/b2b-saas-platform">B2B SAAS Platform</Link>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="/strategic-partners">Strategic Partners</a>
+                    <Link href="/strategic-partners">Strategic Partners</Link>
                   </li>
                   <li>
-                    <a href="/achievements">Achievements</a>
+                    <Link href="/achievements">Achievements</Link>
                   </li>
                   <li>
-                    <a href="#">Blog</a>
+                    <Link href="/blog">Blog</Link>
                   </li>
                   <li>
-                    <a href="/contact">Contact</a>
+                    <Link href="/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>
@@ -283,7 +286,7 @@ export default function Header() {
       {/* Sidebar area start here */}
       <div className="sidebar-area offcanvas offcanvas-end" id="menubar">
         <div className="offcanvas-header">
-          <a href="index.html" className="logo">
+          <a href="/" className="logo">
             {' '}
             <img src="images/logo/nalanda_logo_white.png" alt="logo" />
           </a>
@@ -323,8 +326,8 @@ export default function Header() {
               </li>
               <li className="mb-2">
                 <i className="fa-solid fa-paper-plane" />{' '}
-                <a href="mailto:contact@naladalearning.in">
-                  contact@naladalearning.in
+                <a href="mailto:contact@nalandalearning.in">
+                  contact@nalandalearning.in
                 </a>
               </li>
             </ul>

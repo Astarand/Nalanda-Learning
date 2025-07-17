@@ -170,7 +170,7 @@ export default function StrategicPartnersPage() {
                       underserved regions worldwide.
                     </p>
                   </div>
-                  <a href="page-about.html" className="arrow-btn mt-20">
+                  <a href="#" className="arrow-btn mt-20">
                     <i className="fa-thin fa-arrow-up-right" />
                   </a>
                 </div>
@@ -224,10 +224,10 @@ export default function StrategicPartnersPage() {
                     </h4>
                     <p className="text">
                       We focus on continuous improvement and delivering value to
-                      our partners and educators.``
+                      our partners and educators.
                     </p>
                   </div>
-                  <a href="page-about.html" className="arrow-btn mt-20">
+                  <a href="#" className="arrow-btn mt-20">
                     <i className="fa-thin fa-arrow-up-right" />
                   </a>
                 </div>
@@ -284,7 +284,7 @@ export default function StrategicPartnersPage() {
                       organizations to grow.
                     </p>
                   </div>
-                  <a href="page-about.html" className="arrow-btn mt-20">
+                  <a href="#" className="arrow-btn mt-20">
                     <i className="fa-thin fa-arrow-up-right" />
                   </a>
                 </div>
@@ -371,7 +371,7 @@ export default function StrategicPartnersPage() {
                         </span>
                       </h5>
                     </div>
-                    <a href="page-service-details.html" className="arry-btn">
+                    <a href="#" className="arry-btn">
                       <i className="fa-regular fa-arrow-up-right" />
                     </a>
                   </div>
@@ -457,7 +457,7 @@ export default function StrategicPartnersPage() {
                         </span>
                       </h5>
                     </div>
-                    <a href="page-service-details.html" className="arry-btn">
+                    <a href="#" className="arry-btn">
                       <i className="fa-regular fa-arrow-up-right" />
                     </a>
                   </div>
@@ -505,10 +505,10 @@ export default function StrategicPartnersPage() {
                         </svg>
                       </div>
                       <h5 className="title">
-                        <span>Galileo & Obrizum</span>
+                        <span>Adaptive Learning</span>
                       </h5>
                     </div>
-                    <a href="page-service-details.html" className="arry-btn">
+                    <a href="#" className="arry-btn">
                       <i className="fa-regular fa-arrow-up-right" />
                     </a>
                   </div>
@@ -588,10 +588,13 @@ export default function StrategicPartnersPage() {
                         </svg>
                       </div>
                       <h5 className="title">
-                        <span>AI powerd teacher Training Portal</span>
+                        <span>
+                          AI-driven teacher support for lessons and personal
+                          development
+                        </span>
                       </h5>
                     </div>
-                    <a href="page-service-details.html" className="arry-btn">
+                    <a href="#" className="arry-btn">
                       <i className="fa-regular fa-arrow-up-right" />
                     </a>
                   </div>
@@ -615,10 +618,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="00ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -691,10 +691,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="200ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={50}
@@ -732,10 +729,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="300ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -758,10 +752,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="400ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -798,10 +789,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="500ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -824,10 +812,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="600ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -850,10 +835,7 @@ export default function StrategicPartnersPage() {
               data-wow-delay="700ms"
               data-wow-duration="1500ms"
             >
-              <a
-                href="page-service-details.html"
-                className="service-three__item"
-              >
+              <a href="#" className="service-three__item">
                 <div className="icon">
                   <svg
                     width={60}
@@ -897,10 +879,7 @@ export default function StrategicPartnersPage() {
             <div className="video-nine__image imageRightToLeft gsap__parallax wow">
               <img src="images/video/video-nine-image.jpg" alt="image" />
               <div className="btn-video video-pulse">
-                <a
-                  className="video-popup"
-                  href="https://www.youtube.com/watch?v=-CPWktdSCcI"
-                >
+                <a className="video-popup" href="images/video/peacwa.mp4">
                   <i className="fa-sharp fa-light fa-play" />
                 </a>
               </div>
@@ -913,7 +892,7 @@ export default function StrategicPartnersPage() {
             >
               <div className="section-header mb-30">
                 <h6 className="text-white">
-                  13 Years of Growing Together with Our Learners
+                  15 Years of Growing Together with Our Learners
                 </h6>
                 <h2 className="wow text-white splt-txt" data-splitting="">
                   Empowering Educators, Transforming Learning, and Shaping the
@@ -991,7 +970,7 @@ export default function StrategicPartnersPage() {
       {/* Video area end here */}
 
       {/* Brand area start here */}
-      <section className="brand-six-area pb-130 pt-130">
+      {/* <section className="brand-six-area pb-130 pt-130">
         <div className="container">
           <div className="section-header text-center mb-50">
             <h6>Our Partners</h6>
@@ -1037,7 +1016,7 @@ export default function StrategicPartnersPage() {
             <h5 className="text">2.6k School & University Join with Us. </h5>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Brand area end here */}
 
       {/* Testimonial area start here */}
@@ -1450,8 +1429,10 @@ export default function StrategicPartnersPage() {
                   />
                   <div className="content">
                     <h4 className="text wow splt-txt" data-splitting="">
-                      An insightful consulting firm with an engaged team,
-                      providing solutions that blend analytics.
+                      Nalanda Learning is an insightful educational platform
+                      with an engaged team, offering solutions that blend
+                      analytics and innovative teaching methods to deliver
+                      impactful learning experiences.
                     </h4>
                     <div className="info">
                       <div>

@@ -48,15 +48,16 @@ export default function HomePage() {
                   data-animation="fadeInUp"
                   data-delay=".3s"
                 >
-                  Transforming India’s Teaching Workforce
+                  Shaping India’s Future Through Early Learning
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  Government-certified training programs aligned with NEP 2020
-                  and delivered at scale. Trusted by MEPSC, PSACWA, and 2L+
-                  schools.
+                  Government-certified training programs designed to nurture
+                  young minds, aligned with NEP 2020. Trusted by MEPSC, PSACWA,
+                  and over 2 million schools, we provide transformative learning
+                  experiences for the next generation.
                 </p>
                 <a
-                  href="page-about.html"
+                  href="#"
                   className="arry-btn"
                   data-animation="fadeInUp"
                   data-delay="1s"
@@ -76,14 +77,16 @@ export default function HomePage() {
                   data-animation="fadeInUp"
                   data-delay=".3s"
                 >
-                  Your Gateway to Global Classrooms
+                  We Are Creating a Gateway to Global Classrooms
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  Through nvoco, we enable teacher placements in the UK, UAE,
-                  and beyond — with visa, training, and relocation support.
+                  We help teachers secure placements in the UK, Europe, and
+                  beyond, offering visa support, training, and relocation
+                  assistance for a smooth transition to global classrooms.
                 </p>
+
                 <a
-                  href="page-about.html"
+                  href="#"
                   className="arry-btn"
                   data-animation="fadeInUp"
                   data-delay="1s"
@@ -103,14 +106,16 @@ export default function HomePage() {
                   data-animation="fadeInUp"
                   data-delay=".3s"
                 >
-                  Smart Learning. Real Impact.
+                  Transforming Learning with Smart Technology
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  AI-enabled LMS, real-time analytics, and job-matching —
-                  powering 40,000+ learners with next-gen education tools.
+                  AI-driven LMS, real-time analytics, and automated job matching
+                  — powering your learning ecosystem with seamless integration,
+                  scalable solutions, and next-gen tools for educational
+                  institutions and businesses.
                 </p>
                 <a
-                  href="page-about.html"
+                  href="#"
                   className="arry-btn"
                   data-animation="fadeInUp"
                   data-delay="1s"
@@ -443,7 +448,7 @@ export default function HomePage() {
               <div className="head">
                 <h3 className="head-title">
                   <span className="title">
-                    Foundational Teacher Training (NELTT)
+                    MEPSC-Certified Teacher Training Programs
                   </span>{' '}
                   <span className="number">01</span>
                 </h3>
@@ -452,14 +457,11 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      MEPSC-certified ECCE programs for Anganwadi, pre-primary,
-                      and K–12 educators — aligned with NEP 2020 and NSQF
-                      standards.
+                      MEPSC-certified Early Childhood Care and Education (ECCE)
+                      programs for Anganwadi, pre-primary, and K–12 educators —
+                      fully aligned with NEP 2020 and NSQF standards.
                     </p>
-                    <a
-                      className="arry-btn"
-                      href="/services/organizational-culture-leadership-alignment"
-                    >
+                    <a className="arry-btn" href="#">
                       <i className="fa-thin fa-arrow-up-right"></i>
                     </a>
                   </div>
@@ -489,7 +491,7 @@ export default function HomePage() {
             >
               <div className="head">
                 <h3 className="head-title">
-                  <span className="title">International Teaching Careers</span>{' '}
+                  <span className="title"> Enrich - Your Learning Journey</span>{' '}
                   <span className="number">02</span>
                 </h3>
               </div>
@@ -497,9 +499,11 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      Through nvoco, we connect Indian educators with global
-                      teaching roles in the UK, UAE, and beyond — with full
-                      placement support.
+                      Enrich offers transformative programs designed to enhance
+                      professional skills, deepen knowledge, and promote
+                      personal growth. Through immersive learning experiences,
+                      we empower individuals to unlock their full potential and
+                      excel in their careers and life goals.
                     </p>
                     <a
                       className="arry-btn"
@@ -535,7 +539,7 @@ export default function HomePage() {
               <div className="head">
                 <h3 className="head-title">
                   <span className="title">
-                    EdTech-Driven Teaching Ecosystem
+                    Little Laureates - Nurturing Young Minds
                   </span>{' '}
                   <span className="number">03</span>
                 </h3>
@@ -544,9 +548,13 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      Our smart LMS integrates training, assessment, progress
-                      tracking, and placement in one seamless mobile-first
-                      platform.
+                      Little Laureates is dedicated to laying the foundation for
+                      a lifelong love of learning. Our programs are designed to
+                      foster creativity, curiosity, and critical thinking in
+                      young minds, helping children develop essential skills in
+                      a fun and engaging way. Tailored to early childhood
+                      development, we provide an enriching environment where
+                      children can thrive.
                     </p>
                     <a
                       className="arry-btn"
@@ -581,9 +589,7 @@ export default function HomePage() {
             >
               <div className="head">
                 <h3 className="head-title">
-                  <span className="title">
-                    CSR, Government & Academic Collaborations
-                  </span>{' '}
+                  <span className="title">B2B SaaS Platform</span>{' '}
                   <span className="number">04</span>
                 </h3>
               </div>
@@ -591,9 +597,12 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      We co-design education programs with CSR funders, state
-                      agencies, and school networks — from pilot to nationwide
-                      impact.
+                      Our B2B SaaS platform empowers businesses to streamline
+                      operations, enhance productivity, and drive growth through
+                      innovative software solutions. Designed for scalability,
+                      our platform offers a range of tools for automation, data
+                      analysis, customer relationship management, and more,
+                      enabling you to optimize processes and scale seamlessly.
                     </p>
                     <a
                       className="arry-btn"
@@ -938,7 +947,7 @@ export default function HomePage() {
                       </ul>
                     </div>
                     <a
-                      href="page-about.html"
+                      href="/about"
                       className="btn-one"
                       data-splitting=""
                       data-text="About Us"
@@ -993,7 +1002,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <a
-                    href="page-about.html"
+                    href="/strategic-partners"
                     className="btn-one mt-50"
                     data-splitting=""
                     data-text="Learn More"
@@ -1101,10 +1110,7 @@ export default function HomePage() {
         >
           <div className="video__btn">
             <div className="btn-video video-pulse">
-              <a
-                className="video-popup"
-                href="https://www.youtube.com/watch?v=tQGcU80HLTU"
-              >
+              <a className="video-popup" href="images/video/video.mp4">
                 <i className="fa-sharp fa-light fa-play" />
               </a>
             </div>
@@ -1292,7 +1298,7 @@ export default function HomePage() {
       {/* community area end here */}
 
       {/* Blog area start here */}
-      <section className="blog-area pt-130 pb-130">
+      {/* <section className="blog-area pt-130 pb-130">
         <div className="container">
           <div className="section-header text-center mb-50">
             <h2 className="wow splt-txt" data-splitting="">
@@ -1373,8 +1379,174 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* Blog area end here */}
+      {/* Faq area start here */}
+      <section className="faq-area bg-sub">
+        <div className="row g-0 align-items-center">
+          <div className="col-xl-6">
+            <div className="faq__item">
+              <div className="section-header mb-30">
+                <h6>To know more about us</h6>
+                <h2 className="wow splt-txt" data-splitting="">
+                  Frequently Asked Questions
+                </h2>
+              </div>
+              <div
+                className="faq__accordion wow fadeInLeft"
+                data-wow-delay="200ms"
+                data-wow-duration="1500ms"
+              >
+                <div className="accordion" id="accordionExample">
+                  <div className="accordion-item">
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        What is Nalanda Learning?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      className="accordion-collapse collapse show"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        <p>
+                          Nalanda Learning is an innovative educational platform
+                          offering a range of training programs designed to
+                          enhance the skills of educators, professionals, and
+                          students. We provide personalized, tech-driven
+                          learning experiences that empower individuals at all
+                          stages of their educational journey, aligned with
+                          modern educational standards like NEP 2020.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        What types of programs does Nalanda Learning offer?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        <p>
+                          Nalanda Learning offers a variety of programs that
+                          cater to different learning needs:
+                        </p>
+                        <ul>
+                          <li>
+                            <strong>Teacher Training Programs:</strong> Focused
+                            on enhancing pedagogical skills.
+                          </li>
+                          <li>
+                            <strong>Professional Development Courses:</strong>{' '}
+                            For skill-building in various industries.
+                          </li>
+                          <li>
+                            <strong>
+                              Early Childhood Education (ECE) Courses:
+                            </strong>{' '}
+                            Designed for the development of young learners.
+                          </li>
+                          <li>
+                            <strong>Technology-Enabled Learning:</strong>{' '}
+                            Leveraging digital tools and platforms for a modern
+                            learning experience.
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Are the programs accredited or certified?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        <p>
+                          Yes, Nalanda Learning’s programs are accredited and
+                          recognized by leading educational authorities and
+                          institutions. Many of our programs are aligned with
+                          NEP 2020 and adhere to recognized standards to ensure
+                          high-quality learning and real-world applicability.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="accordion-item">
+                    <h2 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour"
+                        aria-expanded="false"
+                        aria-controls="collapseFour"
+                      >
+                        How can I enroll in a program with Nalanda Learning?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseFour"
+                      className="accordion-collapse collapse"
+                      data-bs-parent="#accordionExample"
+                    >
+                      <div className="accordion-body">
+                        <p>
+                          Enrolling in a program with Nalanda Learning is easy!
+                          Simply visit our website, browse through our program
+                          offerings, and choose the course that suits your
+                          learning goals. You can enroll directly online by
+                          filling out the registration form and selecting your
+                          preferred payment method.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-6">
+            <div className="faq__image gsap__parallax imageRightToLeft wow">
+              <img src="images/faq/faq-image.jpg" alt="image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Faq area end here */}
     </>
   );
 }

@@ -30,19 +30,19 @@ export default function Footer() {
                 <h4 className="title">Our Solutions</h4>
                 <ul>
                   <li>
-                    <a href="#0">ECCE Teacher Training</a>
+                    <a href="#">ECCE Teacher Training</a>
                   </li>
                   <li>
-                    <a href="#0">AI-Powered Learning Platform</a>
+                    <a href="#">AI-Powered Learning Platform</a>
                   </li>
                   <li>
-                    <a href="#0">Global Teaching Career Pathways</a>
+                    <a href="#">Global Teaching Career Pathways</a>
                   </li>
                   <li>
-                    <a href="#0">Curriculum Development</a>
+                    <a href="#">Curriculum Development</a>
                   </li>
                   <li>
-                    <a href="#0">Certification & Assessment Support</a>
+                    <a href="#">Certification & Assessment Support</a>
                   </li>
                 </ul>
               </div>
@@ -56,13 +56,13 @@ export default function Footer() {
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="#0">Strategic Partners</a>
+                    <a href="/strategic-partners">Strategic Partners</a>
                   </li>
                   <li>
-                    <a href="#0">Career</a>
+                    <a href="#">Career</a>
                   </li>
                   <li>
-                    <Link href="/contact">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                   </li>
                 </ul>
               </div>
@@ -206,7 +206,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-9">
                 <p className="text-left">
-                  &copy; 2025 <a href="#0">Nalada Learning</a> Design &
+                  &copy; 2025 <a href="#0">Nalanda Learning</a> Design &
                   Developed by &nbsp;
                   <a href="#">ClicknGo</a>
                 </p>

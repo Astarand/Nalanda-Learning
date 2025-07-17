@@ -15,7 +15,7 @@ export default function AboutPage() {
               <h1 className="title">About Us</h1>
               <ul>
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
                   <i className="fa-light fa-angle-right" />
@@ -42,7 +42,7 @@ export default function AboutPage() {
             <div className="row g-5 g-xl-0">
               <div className="col-xl-5">
                 <div className="about-eleven__year">
-                  <h2 className="count">16</h2>
+                  <h2 className="count">15</h2>
                   <span>
                     Years of Experience in <br /> Education Industry
                   </span>
@@ -148,9 +148,7 @@ export default function AboutPage() {
                   </div>
                   <div className="content">
                     <h4 className="mb-20 mt-40 title">
-                      <a href="page-service-details.html">
-                        Transforming Education, Empowering Educators
-                      </a>
+                      Transforming Education, Empowering Educators
                     </h4>
                     <p className="text">
                       We aim to revolutionize early childhood education through
@@ -195,9 +193,7 @@ export default function AboutPage() {
                   </div>
                   <div className="content">
                     <h4 className="title">
-                      <a href="page-service-details.html">
-                        Driving Scalable, Inclusive Learning Impact
-                      </a>
+                      Driving Scalable, Inclusive Learning Impact
                     </h4>
                     <p className="text">
                       From AI-powered teacher training to community platforms
@@ -276,9 +272,7 @@ export default function AboutPage() {
                   </div>
                   <div className="content">
                     <h4 className="mb-20 mt-40 title">
-                      <a href="page-service-details.html">
-                        A Skilled India Led by Empowered Educators
-                      </a>
+                      A Skilled India Led by Empowered Educators
                     </h4>
                     <p className="text">
                       We envision a nation where every educator is trained,
@@ -343,12 +337,10 @@ export default function AboutPage() {
                     <div className="title">
                       <span className="number">1</span>
                       <p className="text-white">
-                        <a href="#">
-                          Unlock career opportunities with government-certified
-                          pre-service training, aligned with NEP and ECCE
-                          standards to prepare for India’s evolving education
-                          landscape.
-                        </a>
+                        Unlock career opportunities with government-certified
+                        pre-service training, aligned with NEP and ECCE
+                        standards to prepare for India’s evolving education
+                        landscape.
                       </p>
                     </div>
                   </div>
@@ -368,16 +360,14 @@ export default function AboutPage() {
                   </div>
                   <div className="content">
                     <h5 className="sub-title text-white">
-                      Upskill with Micro-Credentials & Certifications
+                      Micro-Credentials & Certifications
                     </h5>
                     <div className="title">
                       <span className="number">2</span>
                       <p className="text-white">
-                        <a href="page-service-details.html">
-                          Access continuous professional development (CPD)
-                          modules to gain in-demand skills in digital pedagogy,
-                          classroom management, and inclusive teaching.
-                        </a>
+                        Access continuous professional development (CPD) modules
+                        to gain in-demand skills in digital pedagogy, classroom
+                        management, and inclusive teaching.
                       </p>
                     </div>
                   </div>
@@ -402,12 +392,10 @@ export default function AboutPage() {
                     <div className="title">
                       <span className="number">3</span>
                       <p className="text-white">
-                        <a href="page-service-details.html">
-                          Partner with us to train educators at scale, track
-                          impact through digital dashboards, and meet regulatory
-                          and CSR compliance through inclusive learning
-                          interventions.
-                        </a>
+                        Partner with us to train educators at scale, track
+                        impact through digital dashboards, and meet regulatory
+                        and CSR compliance through inclusive learning
+                        interventions.
                       </p>
                     </div>
                   </div>
@@ -552,7 +540,7 @@ export default function AboutPage() {
                   <img src="images/team/Chrish.jpeg" alt="image" />
                 </div>
                 <h4>
-                  <a className="hover-link" href="page-team-details.html">
+                  <a className="hover-link" href="#">
                     Chris Raybould
                   </a>
                 </h4>
@@ -569,17 +557,17 @@ export default function AboutPage() {
                   <i className="fa-regular fa-plus" />
                   <ul>
                     <li>
-                      <a href="#0">
+                      <a href="#">
                         <i className="fa-brands fa-facebook-f" />
                       </a>
                     </li>
                     <li>
-                      <a href="#0">
+                      <a href="#">
                         <i className="fa-brands fa-instagram" />
                       </a>
                     </li>
                     <li>
-                      <a href="#0">
+                      <a href="#">
                         <i className="fa-brands fa-linkedin-in" />
                       </a>
                     </li>
@@ -589,7 +577,7 @@ export default function AboutPage() {
                   <img src="images/team/sumit.jpg" alt="image" />
                 </div>
                 <h4>
-                  <a className="hover-link" href="page-team-details.html">
+                  <a className="hover-link" href="#">
                     Sumit Sarkar
                   </a>
                 </h4>
@@ -720,7 +708,7 @@ export default function AboutPage() {
           <div className="swiper project__slider">
             <div className="swiper-wrapper">
               <div className="swiper-slide" data-tab="tab-1">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>01</span>
                     <h4>Personalized Consultation</h4>
@@ -733,7 +721,7 @@ export default function AboutPage() {
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-2">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>02</span>
                     <h4>
@@ -748,7 +736,7 @@ export default function AboutPage() {
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-3">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>03</span>
                     <h4>Strategic Implementation</h4>
@@ -761,7 +749,7 @@ export default function AboutPage() {
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-4">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>04</span>
                     <h4>
@@ -776,15 +764,16 @@ export default function AboutPage() {
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-5">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>05</span>
                     <h4>
-                      We’ll Visit You <br /> at Home
+                      Bringing Quality Early Childhood Education to Your
+                      Doorstep
                     </h4>
                     <p>
-                      We specialize in serving industries like healthcare,
-                      Computer Design.
+                      We offer creative, engaging, and foundational learning for
+                      young children.
                     </p>
                   </div>
                 </a>
@@ -793,12 +782,10 @@ export default function AboutPage() {
                 <a href="page-project-details.html" className="project__item">
                   <div className="content">
                     <span>06</span>
-                    <h4>
-                      Initial computer <br /> Designs
-                    </h4>
+                    <h4>Unlock Global Opportunities with Novoco</h4>
                     <p>
-                      We specialize in serving industries like healthcare,
-                      Computer Design.
+                      We provide top-tier international placements and training
+                      for professionals.
                     </p>
                   </div>
                 </a>
@@ -807,12 +794,10 @@ export default function AboutPage() {
                 <a href="page-project-details.html" className="project__item">
                   <div className="content">
                     <span>07</span>
-                    <h4>
-                      Start the in-depth <br /> design process
-                    </h4>
+                    <h4>Nurturing Educators with Teacher Training Programs</h4>
                     <p>
-                      We specialize in serving industries like healthcare,
-                      Computer Design.
+                      We provide comprehensive training programs to develop
+                      teachers' skills and enhance classroom effectiveness.
                     </p>
                   </div>
                 </a>
@@ -821,10 +806,13 @@ export default function AboutPage() {
                 <a href="page-project-details.html" className="project__item">
                   <div className="content">
                     <span>08</span>
-                    <h4>Assembly Home</h4>
+                    <h4>
+                      Our Scalable B2B SaaS Platform
+                    </h4>
                     <p>
-                      We specialize in serving industries like healthcare,
-                      Computer Design.
+                      Our platform offers customizable solutions that drive
+                      efficiency, automation, and growth for businesses across
+                      industries.
                     </p>
                   </div>
                 </a>
