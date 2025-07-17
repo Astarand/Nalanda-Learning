@@ -417,7 +417,7 @@ export default function AboutPage() {
                   <div className="team-details__top-left">
                     <div className="team-details__top-img">
                       {' '}
-                      <img src="images/resource/director.webp" alt="" />
+                      <img src="images/resource/director.jpg" alt="" />
                       <div className="team-details__big-text" />
                     </div>
                   </div>
@@ -504,7 +504,7 @@ export default function AboutPage() {
                 </div>
                 <h4>
                   <a className="hover-link" href="#">
-                    Chirabrata Mujherjee{' '}
+                    Chirabrata Majumder{' '}
                   </a>
                 </h4>
                 <span>Co-Founder</span>
@@ -806,9 +806,7 @@ export default function AboutPage() {
                 <a href="page-project-details.html" className="project__item">
                   <div className="content">
                     <span>08</span>
-                    <h4>
-                      Our Scalable B2B SaaS Platform
-                    </h4>
+                    <h4>Our Scalable B2B SaaS Platform</h4>
                     <p>
                       Our platform offers customizable solutions that drive
                       efficiency, automation, and growth for businesses across

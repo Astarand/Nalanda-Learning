@@ -894,10 +894,10 @@ export default function StrategicPartnersPage() {
                 <h6 className="text-white">
                   15 Years of Growing Together with Our Learners
                 </h6>
-                <h2 className="wow text-white splt-txt" data-splitting="">
-                  Empowering Educators, Transforming Learning, and Shaping the
-                  Future
-                </h2>
+                <h3 className="wow text-white splt-txt" data-splitting="">
+                  PARTNERSHIP WITH THE PRIVATE SCHOOLS AND CHILDREN WELFARE
+                  ASSOCIATION (PSACWA)
+                </h3>
               </div>
               <div className="progress-area">
                 <div className="progress__title mb-1">
@@ -957,11 +957,10 @@ export default function StrategicPartnersPage() {
                 </div>
               </div>
               <p className="text mt-30">
-                Nalanda Learning delivers a comprehensive suite of educator
-                training programs, curriculum support solutions, and strategic
-                educational consultancy—empowering institutions and teachers to
-                elevate learning outcomes and drive impactful change across
-                classrooms and communities.
+                MEPSC has partnered with PSACWA in training 12 lakh+ teachers in
+                ECCE with the help of the members of the Association with an aim
+                to empower teachers to deliver the best early childhood
+                education as envisioned in NEP2020.
               </p>
             </div>
           </div>

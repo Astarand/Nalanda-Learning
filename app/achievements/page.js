@@ -230,20 +230,19 @@ export default function AchievementsPage() {
                 <div className="choose-four-left">
                   <div className="item">
                     <h2 className="info">
-                      <span className="count">25</span>k+
+                      <span className="count">10</span>M+
                     </h2>
                     <h3
                       className="wow text-white mt-20 splt-txt"
                       data-splitting=""
                     >
-                      Teachers and Educators Empowered Across India
+                      Nearly 10 million teachers to be enrolled
                     </h3>
                     <p className="text-white mt-15">
                       Nalanda Learning has played a pivotal role in shaping
-                      India’s educational landscape, empowering over 25,000+
-                      educators with government-certified training and
-                      professional development. Join us as we continue to make
-                      an impact with innovative, scalable learning solutions.
+                      India’s educational landscape, nearly 10 million teachers
+                      to be enrolled. Join us as we continue to make an impact
+                      with innovative, scalable learning solutions.
                     </p>
                   </div>
                 </div>
@@ -453,7 +452,8 @@ export default function AchievementsPage() {
             <div className="section-header mb-50">
               <h6>Celebrating Success with Nalanda Learning</h6>
               <h2 className="wow splt-txt" data-splitting="">
-                Empowering children and educators <br /> to achieve more, together.
+                Empowering children and educators <br /> to achieve more,
+                together.
               </h2>
             </div>
             <div className="row g-5 g-lg-4 align-items-end">
@@ -492,7 +492,9 @@ export default function AchievementsPage() {
                           </svg>
                         </div>
                         <p>
-                          Nalanda Learning has transformed the way our teachers engage with students. The interactive curriculum and support have made a real difference in our classrooms.
+                          Nalanda Learning has transformed the way our teachers
+                          engage with students. The interactive curriculum and
+                          support have made a real difference in our classrooms.
                         </p>
                         <div className="info">
                           <h4>Priya Sharma</h4>
@@ -532,7 +534,10 @@ export default function AchievementsPage() {
                           </svg>
                         </div>
                         <p>
-                          As a parent, I have seen my child grow more confident and curious thanks to Nalanda Learning’s innovative approach. The resources are engaging and easy to use at home.
+                          As a parent, I have seen my child grow more confident
+                          and curious thanks to Nalanda Learning’s innovative
+                          approach. The resources are engaging and easy to use
+                          at home.
                         </p>
                         <div className="info">
                           <h4>Rahul Mehta</h4>
@@ -572,7 +577,9 @@ export default function AchievementsPage() {
                           </svg>
                         </div>
                         <p>
-                          The training and support from Nalanda Learning have empowered our teachers to deliver lessons more effectively. Our students are more engaged than ever!
+                          The training and support from Nalanda Learning have
+                          empowered our teachers to deliver lessons more
+                          effectively. Our students are more engaged than ever!
                         </p>
                         <div className="info">
                           <h4>Anita Das</h4>
@@ -612,7 +619,9 @@ export default function AchievementsPage() {
                           </svg>
                         </div>
                         <p>
-                          We are grateful to Nalanda Learning for their continuous innovation and dedication. Our school community has benefited immensely from their programs.
+                          We are grateful to Nalanda Learning for their
+                          continuous innovation and dedication. Our school
+                          community has benefited immensely from their programs.
                         </p>
                         <div className="info">
                           <h4>Sunil Kumar</h4>

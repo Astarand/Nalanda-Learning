@@ -1278,13 +1278,11 @@ export default function HomePage() {
                     </li>
                     <li>
                       <h3>
-                        <span className="count">50</span>k<sup>+</sup>
+                        <span className="count">10</span>M<sup>+</sup>
                       </h3>
                     </li>
                   </ul>
-                  <p className="text">
-                    Active educators engaging, learning & growing
-                  </p>
+                  <p className="text">teachers to be enrolled</p>
                 </div>
               </div>
             </div>
