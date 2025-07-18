@@ -3,6 +3,16 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 export default function StrategicPartnersPage() {
+  useEffect(() => {
+    // ✅ Apply data-background images
+    const bgElements = document.querySelectorAll('[data-background]');
+    bgElements.forEach((el) => {
+      const bg = el.getAttribute('data-background');
+      if (bg) {
+        el.style.backgroundImage = `url(${bg})`;
+      }
+    });
+  }, []);
   return (
     <>
       {/* Breadcrumb area start here */}
@@ -13,7 +23,7 @@ export default function StrategicPartnersPage() {
           backgroundImage: "url('/images/banner/banner-inner.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '260px',
+          minHeight: '350px',
           display: 'flex',
           alignItems: 'center',
         }}
@@ -31,7 +41,7 @@ export default function StrategicPartnersPage() {
                   textShadow: '0 2px 8px rgba(30,60,114,0.2)',
                 }}
               >
-                Stategic Partners
+                Strategic Partners
               </h1>
               <ul
                 className="breadcrumb list-inline d-flex align-items-center justify-content-center gap-2 mb-0"
@@ -53,9 +63,7 @@ export default function StrategicPartnersPage() {
                 <li className="list-inline-item" style={{ color: '#fff' }}>
                   <i className="fa fa-angle-right" />
                 </li>
-                <li className="list-inline-item text-white fw-semibold">
-                  Stategic Partners
-                </li>
+                <li className="list-inline-item text-white fw-semibold">Strategic Partners</li>
               </ul>
             </div>
           </div>
@@ -93,7 +101,7 @@ export default function StrategicPartnersPage() {
           <div className="row g-5 g-xxl-0">
             <div className="col-lg-6">
               <div className="choose__image imageUpToDown wow gsap__parallax">
-                <img src="images/choose/choose-image.jpg" alt="image" />
+                <img src="/images/choose/choose-image.jpg" alt="image" />
               </div>
             </div>
             <div className="col-lg-6">
@@ -102,15 +110,10 @@ export default function StrategicPartnersPage() {
                   <h2 className="wow splt-txt" data-splitting="">
                     We’re Building the Future Together – Join Us.
                   </h2>
-                  <p
-                    className="wow fadeInUp"
-                    data-wow-delay="00ms"
-                    data-wow-duration="1500ms"
-                  >
-                    At Nalanda Learning, we believe in building a better future
-                    through education and innovation. We work hand-in-hand with
-                    our partners and educators to create lasting impact and
-                    drive positive change in the world of learning.
+                  <p className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                    At Nalanda Learning, we believe in building a better future through education
+                    and innovation. We work hand-in-hand with our partners and educators to create
+                    lasting impact and drive positive change in the world of learning.
                   </p>
                 </div>
               </div>
@@ -133,11 +136,7 @@ export default function StrategicPartnersPage() {
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <rect
-                        width={50}
-                        height={50}
-                        fill="url(#pattern0_1095_35666)"
-                      />
+                      <rect width={50} height={50} fill="url(#pattern0_1095_35666)" />
                       <defs>
                         <pattern
                           id="pattern0_1095_35666"
@@ -145,10 +144,7 @@ export default function StrategicPartnersPage() {
                           width={1}
                           height={1}
                         >
-                          <use
-                            xlinkHref="#image0_1095_35666"
-                            transform="scale(0.0163934)"
-                          />
+                          <use xlinkHref="#image0_1095_35666" transform="scale(0.0163934)" />
                         </pattern>
                         <image
                           id="image0_1095_35666"
@@ -161,13 +157,11 @@ export default function StrategicPartnersPage() {
                   </div>
                   <div className="content">
                     <h4 className="title">
-                      <span className="hover-link-light text-white">
-                        Global Growth
-                      </span>
+                      <span className="hover-link-light text-white">Global Growth</span>
                     </h4>
                     <p className="text">
-                      We aim to bring transformative educational solutions to
-                      underserved regions worldwide.
+                      We aim to bring transformative educational solutions to underserved regions
+                      worldwide.
                     </p>
                   </div>
                   <a href="#" className="arrow-btn mt-20">
@@ -190,11 +184,7 @@ export default function StrategicPartnersPage() {
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <rect
-                        width={69}
-                        height={50}
-                        fill="url(#pattern0_1095_35651)"
-                      />
+                      <rect width={69} height={50} fill="url(#pattern0_1095_35651)" />
                       <defs>
                         <pattern
                           id="pattern0_1095_35651"
@@ -218,13 +208,11 @@ export default function StrategicPartnersPage() {
                   </div>
                   <div className="content">
                     <h4 className="title">
-                      <span className="hover-link ">
-                        Professional Excellence
-                      </span>
+                      <span className="hover-link ">Professional Excellence</span>
                     </h4>
                     <p className="text">
-                      We focus on continuous improvement and delivering value to
-                      our partners and educators.
+                      We focus on continuous improvement and delivering value to our partners and
+                      educators.
                     </p>
                   </div>
                   <a href="#" className="arrow-btn mt-20">
@@ -247,11 +235,7 @@ export default function StrategicPartnersPage() {
                       xmlns="http://www.w3.org/2000/svg"
                       xmlnsXlink="http://www.w3.org/1999/xlink"
                     >
-                      <rect
-                        width={69}
-                        height={50}
-                        fill="url(#pattern0_1095_35636)"
-                      />
+                      <rect width={69} height={50} fill="url(#pattern0_1095_35636)" />
                       <defs>
                         <pattern
                           id="pattern0_1095_35636"
@@ -275,13 +259,10 @@ export default function StrategicPartnersPage() {
                   </div>
                   <div className="content">
                     <h4 className="title">
-                      <span className="hover-link-light text-white">
-                        Business Acumen
-                      </span>
+                      <span className="hover-link-light text-white">Business Acumen</span>
                     </h4>
                     <p className="text">
-                      Our strategic approach empowers educators to thrive and
-                      organizations to grow.
+                      Our strategic approach empowers educators to thrive and organizations to grow.
                     </p>
                   </div>
                   <a href="#" className="arrow-btn mt-20">
@@ -306,16 +287,11 @@ export default function StrategicPartnersPage() {
                     <h2 className="wow splt-txt" data-splitting="">
                       Our Key Services to Empower Global Learning
                     </h2>
-                    <p
-                      className="wow fadeInUp"
-                      data-wow-delay="00ms"
-                      data-wow-duration="1500ms"
-                    >
-                      We are dedicated to improving global education standards
-                      and creating sustainable learning ecosystems worldwide.
-                      Through our expert services, we aim to transform education
-                      by offering cutting-edge technology, personalized learning
-                      experiences, and global teacher support.
+                    <p className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                      We are dedicated to improving global education standards and creating
+                      sustainable learning ecosystems worldwide. Through our expert services, we aim
+                      to transform education by offering cutting-edge technology, personalized
+                      learning experiences, and global teacher support.
                     </p>
                   </div>
                 </div>
@@ -366,9 +342,7 @@ export default function StrategicPartnersPage() {
                         </svg>
                       </div>
                       <h5 className="title">
-                        <span>
-                          National Early Childhood Teacher Training (NELTT)
-                        </span>
+                        <span>National Early Childhood Teacher Training (NELTT)</span>
                       </h5>
                     </div>
                     <a href="#" className="arry-btn">
@@ -451,10 +425,7 @@ export default function StrategicPartnersPage() {
                         </svg>
                       </div>
                       <h5 className="title">
-                        <span>
-                          National Vocational and Educational Commission
-                          Organization
-                        </span>
+                        <span>National Vocational and Educational Commission Organization</span>
                       </h5>
                     </div>
                     <a href="#" className="arry-btn">
@@ -588,10 +559,7 @@ export default function StrategicPartnersPage() {
                         </svg>
                       </div>
                       <h5 className="title">
-                        <span>
-                          AI-driven teacher support for lessons and personal
-                          development
-                        </span>
+                        <span>AI-driven teacher support for lessons and personal development</span>
                       </h5>
                     </div>
                     <a href="#" className="arry-btn">
@@ -877,26 +845,20 @@ export default function StrategicPartnersPage() {
         <div className="row g-0">
           <div className="col-lg-6">
             <div className="video-nine__image imageRightToLeft gsap__parallax wow">
-              <img src="images/video/video-nine-image.jpg" alt="image" />
+              <img src="/images/video/video-nine-image.jpg" alt="image" />
               <div className="btn-video video-pulse">
-                <a className="video-popup" href="images/video/peacwa.mp4">
+                <a className="video-popup" href="/images/video/peacwa.mp4">
                   <i className="fa-sharp fa-light fa-play" />
                 </a>
               </div>
             </div>
           </div>
           <div className="col-lg-6">
-            <div
-              className="video-nine__item"
-              data-background="images/bg/video-nine-bg-right.jpg"
-            >
+            <div className="video-nine__item" data-background="/images/bg/video-nine-bg-right.jpg">
               <div className="section-header mb-30">
-                <h6 className="text-white">
-                  15 Years of Growing Together with Our Learners
-                </h6>
+                <h6 className="text-white">15 Years of Growing Together with Our Learners</h6>
                 <h3 className="wow text-white splt-txt" data-splitting="">
-                  PARTNERSHIP WITH THE PRIVATE SCHOOLS AND CHILDREN WELFARE
-                  ASSOCIATION (PSACWA)
+                  PARTNERSHIP WITH THE PRIVATE SCHOOLS AND CHILDREN WELFARE ASSOCIATION (PSACWA)
                 </h3>
               </div>
               <div className="progress-area">
@@ -957,10 +919,9 @@ export default function StrategicPartnersPage() {
                 </div>
               </div>
               <p className="text mt-30">
-                MEPSC has partnered with PSACWA in training 12 lakh+ teachers in
-                ECCE with the help of the members of the Association with an aim
-                to empower teachers to deliver the best early childhood
-                education as envisioned in NEP2020.
+                MEPSC has partnered with PSACWA in training 12 lakh+ teachers in ECCE with the help
+                of the members of the Association with an aim to empower teachers to deliver the
+                best early childhood education as envisioned in NEP2020.
               </p>
             </div>
           </div>
@@ -979,36 +940,36 @@ export default function StrategicPartnersPage() {
           </div>
           <div className="brand-six__wrp">
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image1.png" alt="image" />
+              <img src="/images/brand/brand-six-image1.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image2.png" alt="image" />
+              <img src="/images/brand/brand-six-image2.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image3.png" alt="image" />
+              <img src="/images/brand/brand-six-image3.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image4.png" alt="image" />
+              <img src="/images/brand/brand-six-image4.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image5.png" alt="image" />
+              <img src="/images/brand/brand-six-image5.png" alt="image" />
             </a>
           </div>
           <div className="brand-six__wrp wrp-bottom">
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image6.png" alt="image" />
+              <img src="/images/brand/brand-six-image6.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image7.png" alt="image" />
+              <img src="/images/brand/brand-six-image7.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image8.png" alt="image" />
+              <img src="/images/brand/brand-six-image8.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image9.png" alt="image" />
+              <img src="/images/brand/brand-six-image9.png" alt="image" />
             </a>
             <a href="#0" className="brand-six__item">
-              <img src="images/brand/brand-six-image10.png" alt="image" />
+              <img src="/images/brand/brand-six-image10.png" alt="image" />
             </a>
           </div>
           <div className="brand-six__text mt-50">
@@ -1021,12 +982,12 @@ export default function StrategicPartnersPage() {
       {/* Testimonial area start here */}
       <section className="testimonial-area bg-sub pt-130 pb-130">
         <div className="testimonial__shape">
-          <img src="images/shape/testimonial-shape.png" alt="shape" />
+          <img src="/images/shape/testimonial-shape.png" alt="shape" />
         </div>
         <div className="testimonial__image animation__arryLeftRight">
           <img
             className="wow bounceInRight"
-            src="images/testimonial/testimonial-image.png"
+            src="/images/testimonial/testimonial-image.png"
             alt="image"
           />
         </div>
@@ -1035,8 +996,7 @@ export default function StrategicPartnersPage() {
             <div className="section-header mb-50">
               <h6>Celebrating Success with Nalanda Learning</h6>
               <h2 className="wow splt-txt" data-splitting="">
-                Empowering children and educators <br /> to achieve more,
-                together.
+                Empowering children and educators <br /> to achieve more, together.
               </h2>
             </div>
             <div className="row g-5 g-lg-4 align-items-end">
@@ -1075,9 +1035,9 @@ export default function StrategicPartnersPage() {
                           </svg>
                         </div>
                         <p>
-                          Nalanda Learning has transformed the way our teachers
-                          engage with students. The interactive curriculum and
-                          support have made a real difference in our classrooms.
+                          Nalanda Learning has transformed the way our teachers engage with
+                          students. The interactive curriculum and support have made a real
+                          difference in our classrooms.
                         </p>
                         <div className="info">
                           <h4>Priya Sharma</h4>
@@ -1117,10 +1077,9 @@ export default function StrategicPartnersPage() {
                           </svg>
                         </div>
                         <p>
-                          As a parent, I have seen my child grow more confident
-                          and curious thanks to Nalanda Learning’s innovative
-                          approach. The resources are engaging and easy to use
-                          at home.
+                          As a parent, I have seen my child grow more confident and curious thanks
+                          to Nalanda Learning’s innovative approach. The resources are engaging and
+                          easy to use at home.
                         </p>
                         <div className="info">
                           <h4>Rahul Mehta</h4>
@@ -1160,9 +1119,9 @@ export default function StrategicPartnersPage() {
                           </svg>
                         </div>
                         <p>
-                          The training and support from Nalanda Learning have
-                          empowered our teachers to deliver lessons more
-                          effectively. Our students are more engaged than ever!
+                          The training and support from Nalanda Learning have empowered our teachers
+                          to deliver lessons more effectively. Our students are more engaged than
+                          ever!
                         </p>
                         <div className="info">
                           <h4>Anita Das</h4>
@@ -1202,9 +1161,9 @@ export default function StrategicPartnersPage() {
                           </svg>
                         </div>
                         <p>
-                          We are grateful to Nalanda Learning for their
-                          continuous innovation and dedication. Our school
-                          community has benefited immensely from their programs.
+                          We are grateful to Nalanda Learning for their continuous innovation and
+                          dedication. Our school community has benefited immensely from their
+                          programs.
                         </p>
                         <div className="info">
                           <h4>Sunil Kumar</h4>
@@ -1258,14 +1217,9 @@ export default function StrategicPartnersPage() {
                     <h2 className="wow splt-txt" data-splitting="">
                       Curious about something? Just ask us!
                     </h2>
-                    <p
-                      className="wow fadeInUp"
-                      data-wow-delay="00ms"
-                      data-wow-duration="1500ms"
-                    >
-                      Nalanda Learning is here to answer all your
-                      education-related questions. If you have inquiries beyond
-                      what's listed, feel free to contact us!
+                    <p className="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                      Nalanda Learning is here to answer all your education-related questions. If
+                      you have inquiries beyond what's listed, feel free to contact us!
                     </p>
                   </div>
                   <a
@@ -1309,11 +1263,10 @@ export default function StrategicPartnersPage() {
                       >
                         <div className="accordion-body">
                           <p>
-                            Nalanda Learning is an educational platform offering
-                            a wide range of courses, teacher training programs,
-                            and certifications. We focus on building
-                            foundational skills and providing continuous
-                            professional development.
+                            Nalanda Learning is an educational platform offering a wide range of
+                            courses, teacher training programs, and certifications. We focus on
+                            building foundational skills and providing continuous professional
+                            development.
                           </p>
                         </div>
                       </div>
@@ -1338,10 +1291,9 @@ export default function StrategicPartnersPage() {
                       >
                         <div className="accordion-body">
                           <p>
-                            Registration is easy! Simply visit our "Join Nalanda
-                            Learning" section, fill out the application form,
-                            and select your program of interest. You can
-                            register as a student, educator, or institution.
+                            Registration is easy! Simply visit our "Join Nalanda Learning" section,
+                            fill out the application form, and select your program of interest. You
+                            can register as a student, educator, or institution.
                           </p>
                         </div>
                       </div>
@@ -1366,10 +1318,9 @@ export default function StrategicPartnersPage() {
                       >
                         <div className="accordion-body">
                           <p>
-                            We offer a wide range of courses in teacher
-                            training, child development, digital marketing, and
-                            more. Our courses are tailored to different learning
-                            levels and offer certification upon completion.
+                            We offer a wide range of courses in teacher training, child development,
+                            digital marketing, and more. Our courses are tailored to different
+                            learning levels and offer certification upon completion.
                           </p>
                         </div>
                       </div>
@@ -1384,8 +1335,7 @@ export default function StrategicPartnersPage() {
                           aria-expanded="false"
                           aria-controls="collapseFour"
                         >
-                          What makes Nalanda Learning different from other
-                          education platforms?
+                          What makes Nalanda Learning different from other education platforms?
                         </button>
                       </h2>
                       <div
@@ -1395,12 +1345,11 @@ export default function StrategicPartnersPage() {
                       >
                         <div className="accordion-body">
                           <p>
-                            Nalanda Learning emphasizes on a hands-on, practical
-                            approach to learning. Our courses are designed by
-                            industry experts, and we offer personalized guidance
-                            to our learners. Additionally, we provide upskilling
-                            programs for professionals to help them grow in
-                            their careers.
+                            Nalanda Learning emphasizes on a hands-on, practical approach to
+                            learning. Our courses are designed by industry experts, and we offer
+                            personalized guidance to our learners. Additionally, we provide
+                            upskilling programs for professionals to help them grow in their
+                            careers.
                           </p>
                         </div>
                       </div>
@@ -1422,16 +1371,12 @@ export default function StrategicPartnersPage() {
             <div className="row g-0">
               <div className="col-lg-6">
                 <div className="contact-four__image imageRightToLeft wow">
-                  <img
-                    src="images/contact/contact-nine-image.jpg"
-                    alt="image"
-                  />
+                  <img src="/images/contact/contact-nine-image.jpg" alt="image" />
                   <div className="content">
                     <h4 className="text wow splt-txt" data-splitting="">
-                      Nalanda Learning is an insightful educational platform
-                      with an engaged team, offering solutions that blend
-                      analytics and innovative teaching methods to deliver
-                      impactful learning experiences.
+                      Nalanda Learning is an insightful educational platform with an engaged team,
+                      offering solutions that blend analytics and innovative teaching methods to
+                      deliver impactful learning experiences.
                     </h4>
                     <div className="info">
                       <div>
@@ -1450,8 +1395,8 @@ export default function StrategicPartnersPage() {
                       We’re here to help
                     </h4>
                     <p className="mt-3">
-                      Need help with a project or have a question about our
-                      work? We're here for you.
+                      Need help with a project or have a question about our work? We're here for
+                      you.
                     </p>
                   </div>
                   <form action="#0">
@@ -1477,12 +1422,7 @@ export default function StrategicPartnersPage() {
                       <option value="university">University</option>
                     </select>
                     <input type="text" placeholder="Subject" />
-                    <textarea
-                      name="masage"
-                      id="masage"
-                      placeholder="Message"
-                      defaultValue={''}
-                    />
+                    <textarea name="masage" id="masage" placeholder="Message" defaultValue={''} />
                     <button
                       className="btn-one rounded-0 w-100"
                       data-splitting=""

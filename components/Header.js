@@ -288,7 +288,7 @@ export default function Header() {
         <div className="offcanvas-header">
           <a href="/" className="logo">
             {' '}
-            <img src="images/logo/nalanda_logo_white.png" alt="logo" />
+            <img src="/images/logo/nalanda_logo_white.png" alt="logo" />
           </a>
           <button
             type="button"

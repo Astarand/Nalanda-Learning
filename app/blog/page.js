@@ -1,7 +1,17 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+'use client';
+import { useEffect } from 'react';
 
 export default function BlogPage() {
+  useEffect(() => {
+    // ✅ Apply data-background images
+    const bgElements = document.querySelectorAll('[data-background]');
+    bgElements.forEach((el) => {
+      const bg = el.getAttribute('data-background');
+      if (bg) {
+        el.style.backgroundImage = `url(${bg})`;
+      }
+    });
+  }, []);
   return (
     <>
       <div

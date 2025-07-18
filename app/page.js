@@ -7,6 +7,15 @@ export default function HomePage() {
   const [tab, setTab] = useState(1);
 
   useEffect(() => {
+    // ✅ Apply data-background images
+    const bgElements = document.querySelectorAll('[data-background]');
+    bgElements.forEach((el) => {
+      const bg = el.getAttribute('data-background');
+      if (bg) {
+        el.style.backgroundImage = `url(${bg})`;
+      }
+    });
+
     if (typeof window !== 'undefined' && window.Swiper) {
       new window.Swiper('.banner__slider', {
         loop: true,
@@ -19,7 +28,7 @@ export default function HomePage() {
         },
       });
     }
-    // WOW.js or AOS re-init for animation on scroll
+
     if (typeof window !== 'undefined') {
       if (window.WOW) {
         new window.WOW().init();
@@ -28,6 +37,15 @@ export default function HomePage() {
         window.AOS.refreshHard && window.AOS.refreshHard();
         window.AOS.init && window.AOS.init();
       }
+
+      // ✅ Apply data-background images
+      const bgElements = document.querySelectorAll('[data-background]');
+      bgElements.forEach((el) => {
+        const bg = el.getAttribute('data-background');
+        if (bg) {
+          el.style.backgroundImage = `url(${bg})`;
+        }
+      });
     }
   }, []);
 
@@ -38,88 +56,50 @@ export default function HomePage() {
         <div className="swiper banner-six__slider">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
-              <div
-                className="slide-bg"
-                data-background="images/banner/banner-image1.jpg"
-              />
+              <div className="slide-bg" data-background="/images/banner/banner-image1.jpg" />
               <div className="banner-six__content">
-                <h1
-                  className="title"
-                  data-animation="fadeInUp"
-                  data-delay=".3s"
-                >
+                <h1 className="title" data-animation="fadeInUp" data-delay=".3s">
                   Shaping India’s Future Through Early Learning
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  Government-certified training programs designed to nurture
-                  young minds, aligned with NEP 2020. Trusted by MEPSC, PSACWA,
-                  and over 2 million schools, we provide transformative learning
-                  experiences for the next generation.
+                  Government-certified training programs designed to nurture young minds, aligned
+                  with NEP 2020. Trusted by MEPSC, PSACWA, and over 2 million schools, we provide
+                  transformative learning experiences for the next generation.
                 </p>
-                <a
-                  href="#"
-                  className="arry-btn"
-                  data-animation="fadeInUp"
-                  data-delay="1s"
-                >
+                <a href="#" className="arry-btn" data-animation="fadeInUp" data-delay="1s">
                   <i className="fa-thin fa-arrow-up-right" />
                 </a>
               </div>
             </div>
             <div className="swiper-slide">
-              <div
-                className="slide-bg"
-                data-background="images/banner/banner-image2.jpg"
-              />
+              <div className="slide-bg" data-background="/images/banner/banner-image2.jpg" />
               <div className="banner-six__content">
-                <h1
-                  className="title"
-                  data-animation="fadeInUp"
-                  data-delay=".3s"
-                >
+                <h1 className="title" data-animation="fadeInUp" data-delay=".3s">
                   We Are Creating a Gateway to Global Classrooms
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  We help teachers secure placements in the UK, Europe, and
-                  beyond, offering visa support, training, and relocation
-                  assistance for a smooth transition to global classrooms.
+                  We help teachers secure placements in the UK, Europe, and beyond, offering visa
+                  support, training, and relocation assistance for a smooth transition to global
+                  classrooms.
                 </p>
 
-                <a
-                  href="#"
-                  className="arry-btn"
-                  data-animation="fadeInUp"
-                  data-delay="1s"
-                >
+                <a href="#" className="arry-btn" data-animation="fadeInUp" data-delay="1s">
                   <i className="fa-thin fa-arrow-up-right" />
                 </a>
               </div>
             </div>
             <div className="swiper-slide">
-              <div
-                className="slide-bg"
-                data-background="images/banner/banner-image3.jpg"
-              />
+              <div className="slide-bg" data-background="/images/banner/banner-image3.jpg" />
               <div className="banner-six__content">
-                <h1
-                  className="title"
-                  data-animation="fadeInUp"
-                  data-delay=".3s"
-                >
+                <h1 className="title" data-animation="fadeInUp" data-delay=".3s">
                   Transforming Learning with Smart Technology
                 </h1>
                 <p className="text" data-animation="fadeInUp" data-delay=".5s">
-                  AI-driven LMS, real-time analytics, and automated job matching
-                  — powering your learning ecosystem with seamless integration,
-                  scalable solutions, and next-gen tools for educational
-                  institutions and businesses.
+                  AI-driven LMS, real-time analytics, and automated job matching — powering your
+                  learning ecosystem with seamless integration, scalable solutions, and next-gen
+                  tools for educational institutions and businesses.
                 </p>
-                <a
-                  href="#"
-                  className="arry-btn"
-                  data-animation="fadeInUp"
-                  data-delay="1s"
-                >
+                <a href="#" className="arry-btn" data-animation="fadeInUp" data-delay="1s">
                   <i className="fa-thin fa-arrow-up-right" />
                 </a>
               </div>
@@ -135,10 +115,7 @@ export default function HomePage() {
           <div className="row g-0">
             <div className="col-xl-6">
               <div className="professional__image imageLeftToRight wow">
-                <img
-                  src="images/professional/professional-image.jpg"
-                  alt="image"
-                />
+                <img src="/images/professional/professional-image.jpg" alt="image" />
                 <div className="content">
                   <ul>
                     <li className="icon">
@@ -198,39 +175,27 @@ export default function HomePage() {
             <div className="col-xl-6">
               <div className="professional__content">
                 <div className="section-header">
-                  <h2>
-                    A national mission to empower teachers and transform
-                    classrooms.
-                  </h2>
+                  <h2>A national mission to empower teachers and transform classrooms.</h2>
                   <p>
-                    Nalanda Learning is India's most integrated education impact
-                    platform — connecting early childhood teacher training,
-                    global teaching careers, and AI-powered learning
-                    infrastructure to deliver real results. With backing from
-                    MEPSC, PSACWA, and nvoco, we're shaping the future of
-                    learning.
+                    Nalanda Learning is India's most integrated education impact platform —
+                    connecting early childhood teacher training, global teaching careers, and
+                    AI-powered learning infrastructure to deliver real results. With backing from
+                    MEPSC, PSACWA, and nvoco, we're shaping the future of learning.
                   </p>
                 </div>
                 <div>
                   <ul>
                     <li>
-                      <i className="fa-solid fa-check" /> MEPSC-certified ECCE
-                      programs
+                      <i className="fa-solid fa-check" /> MEPSC-certified ECCE programs
                     </li>
                     <li>
-                      <i className="fa-solid fa-check" /> Over 30,000 teachers
-                      trained
+                      <i className="fa-solid fa-check" /> Over 30,000 teachers trained
                     </li>
                     <li>
-                      <i className="fa-solid fa-check" /> Trusted by 2L+ schools
-                      across India
+                      <i className="fa-solid fa-check" /> Trusted by 2L+ schools across India
                     </li>
                   </ul>
-                  <a
-                    href="/about"
-                    className="btn-one mt-50"
-                    data-text="Discover More"
-                  >
+                  <a href="/about" className="btn-one mt-50" data-text="Discover More">
                     Discover More
                   </a>
                 </div>
@@ -265,14 +230,7 @@ export default function HomePage() {
                           fill="#fff"
                         />
                         {/* Tassel */}
-                        <line
-                          x1="32"
-                          y1="34"
-                          x2="32"
-                          y2="50"
-                          stroke="#121C27"
-                          strokeWidth="2"
-                        />
+                        <line x1="32" y1="34" x2="32" y2="50" stroke="#121C27" strokeWidth="2" />
                         <circle cx="32" cy="50" r="2" fill="#121C27" />
                       </g>
                     </svg>
@@ -280,9 +238,8 @@ export default function HomePage() {
                   <div className="content">
                     <h4 className="title">Educator Skilling at Scale</h4>
                     <p className="text">
-                      We train teachers across ECCE, K–12, and vocational
-                      streams with MEPSC-certified programs, bridging skill gaps
-                      at the grassroots level.
+                      We train teachers across ECCE, K–12, and vocational streams with
+                      MEPSC-certified programs, bridging skill gaps at the grassroots level.
                     </p>
                   </div>
                 </div>
@@ -343,9 +300,8 @@ export default function HomePage() {
                   <div className="content">
                     <h4 className="title">Global Mobility for Educators</h4>
                     <p className="text">
-                      Our nvoco program connects qualified Indian teachers to
-                      international teaching opportunities in the UK, UAE, and
-                      Asia.
+                      Our nvoco program connects qualified Indian teachers to international teaching
+                      opportunities in the UK, UAE, and Asia.
                     </p>
                   </div>
                 </div>
@@ -361,30 +317,9 @@ export default function HomePage() {
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       {/* Community icon: three people */}
-                      <circle
-                        cx="24"
-                        cy="16"
-                        r="6"
-                        stroke="#121C27"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <circle
-                        cx="12"
-                        cy="28"
-                        r="5"
-                        stroke="#121C27"
-                        strokeWidth="2"
-                        fill="none"
-                      />
-                      <circle
-                        cx="36"
-                        cy="28"
-                        r="5"
-                        stroke="#121C27"
-                        strokeWidth="2"
-                        fill="none"
-                      />
+                      <circle cx="24" cy="16" r="6" stroke="#121C27" strokeWidth="2" fill="none" />
+                      <circle cx="12" cy="28" r="5" stroke="#121C27" strokeWidth="2" fill="none" />
+                      <circle cx="36" cy="28" r="5" stroke="#121C27" strokeWidth="2" fill="none" />
                       <path
                         d="M24 22c-6 0-10 4-10 8v2h20v-2c0-4-4-8-10-8z"
                         stroke="#121C27"
@@ -447,9 +382,7 @@ export default function HomePage() {
             >
               <div className="head">
                 <h3 className="head-title">
-                  <span className="title">
-                    MEPSC-Certified Teacher Training Programs
-                  </span>{' '}
+                  <span className="title">MEPSC-Certified Teacher Training Programs</span>{' '}
                   <span className="number">01</span>
                 </h3>
               </div>
@@ -457,9 +390,9 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      MEPSC-certified Early Childhood Care and Education (ECCE)
-                      programs for Anganwadi, pre-primary, and K–12 educators —
-                      fully aligned with NEP 2020 and NSQF standards.
+                      MEPSC-certified Early Childhood Care and Education (ECCE) programs for
+                      Anganwadi, pre-primary, and K–12 educators — fully aligned with NEP 2020 and
+                      NSQF standards.
                     </p>
                     <a className="arry-btn" href="#">
                       <i className="fa-thin fa-arrow-up-right"></i>
@@ -499,16 +432,12 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      Enrich offers transformative programs designed to enhance
-                      professional skills, deepen knowledge, and promote
-                      personal growth. Through immersive learning experiences,
-                      we empower individuals to unlock their full potential and
-                      excel in their careers and life goals.
+                      Enrich offers transformative programs designed to enhance professional skills,
+                      deepen knowledge, and promote personal growth. Through immersive learning
+                      experiences, we empower individuals to unlock their full potential and excel
+                      in their careers and life goals.
                     </p>
-                    <a
-                      className="arry-btn"
-                      href="/services/strategic-planning-development"
-                    >
+                    <a className="arry-btn" href="/services/strategic-planning-development">
                       <i className="fa-thin fa-arrow-up-right"></i>
                     </a>
                   </div>
@@ -538,9 +467,7 @@ export default function HomePage() {
             >
               <div className="head">
                 <h3 className="head-title">
-                  <span className="title">
-                    Little Laureates - Nurturing Young Minds
-                  </span>{' '}
+                  <span className="title">Little Laureates - Nurturing Young Minds</span>{' '}
                   <span className="number">03</span>
                 </h3>
               </div>
@@ -548,18 +475,13 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      Little Laureates is dedicated to laying the foundation for
-                      a lifelong love of learning. Our programs are designed to
-                      foster creativity, curiosity, and critical thinking in
-                      young minds, helping children develop essential skills in
-                      a fun and engaging way. Tailored to early childhood
-                      development, we provide an enriching environment where
-                      children can thrive.
+                      Little Laureates is dedicated to laying the foundation for a lifelong love of
+                      learning. Our programs are designed to foster creativity, curiosity, and
+                      critical thinking in young minds, helping children develop essential skills in
+                      a fun and engaging way. Tailored to early childhood development, we provide an
+                      enriching environment where children can thrive.
                     </p>
-                    <a
-                      className="arry-btn"
-                      href="/services/operational-efficiency-optimization"
-                    >
+                    <a className="arry-btn" href="/services/operational-efficiency-optimization">
                       <i className="fa-thin fa-arrow-up-right"></i>
                     </a>
                   </div>
@@ -597,17 +519,13 @@ export default function HomePage() {
                 <div className="wrp">
                   <div className="content-wrp">
                     <p className="text">
-                      Our B2B SaaS platform empowers businesses to streamline
-                      operations, enhance productivity, and drive growth through
-                      innovative software solutions. Designed for scalability,
-                      our platform offers a range of tools for automation, data
-                      analysis, customer relationship management, and more,
-                      enabling you to optimize processes and scale seamlessly.
+                      Our B2B SaaS platform empowers businesses to streamline operations, enhance
+                      productivity, and drive growth through innovative software solutions. Designed
+                      for scalability, our platform offers a range of tools for automation, data
+                      analysis, customer relationship management, and more, enabling you to optimize
+                      processes and scale seamlessly.
                     </p>
-                    <a
-                      className="arry-btn"
-                      href="/services/tailored-consulting-solutions-advisory"
-                    >
+                    <a className="arry-btn" href="/services/tailored-consulting-solutions-advisory">
                       <i className="fa-thin fa-arrow-up-right"></i>
                     </a>
                   </div>
@@ -685,10 +603,9 @@ export default function HomePage() {
                 >
                   <div className="choose-one__content">
                     <p className="mb-50">
-                      With India's push toward universal preschool under NEP
-                      2020, training educators at scale has become a national
-                      mission. Yet access to certified, high-quality training
-                      remains limited — that's where Nalanda steps in.
+                      With India's push toward universal preschool under NEP 2020, training
+                      educators at scale has become a national mission. Yet access to certified,
+                      high-quality training remains limited — that's where Nalanda steps in.
                     </p>
                     <div className="item">
                       <div className="icon">
@@ -773,12 +690,10 @@ export default function HomePage() {
                         </h4>
                       </div>
                       <p>
-                        At Nalanda Learning, our mission is to empower educators
-                        and learners by delivering scalable, certified, and
-                        digitally-enabled education solutions. We believe that
-                        every teacher we train becomes a catalyst for change —
-                        from early childhood to lifelong learning, from
-                        classroom to career.
+                        At Nalanda Learning, our mission is to empower educators and learners by
+                        delivering scalable, certified, and digitally-enabled education solutions.
+                        We believe that every teacher we train becomes a catalyst for change — from
+                        early childhood to lifelong learning, from classroom to career.
                       </p>
                     </div>
                     <div className="line" />
@@ -818,12 +733,10 @@ export default function HomePage() {
                       </div>
                       <div>
                         <p>
-                          We are committed to transforming education by
-                          investing in the people who shape it — teachers,
-                          trainers, and institutions. Through technology,
-                          partnerships, and purpose-driven programs, Nalanda
-                          ensures every learner and educator has the opportunity
-                          to thrive in a future-ready ecosystem.
+                          We are committed to transforming education by investing in the people who
+                          shape it — teachers, trainers, and institutions. Through technology,
+                          partnerships, and purpose-driven programs, Nalanda ensures every learner
+                          and educator has the opportunity to thrive in a future-ready ecosystem.
                         </p>
                       </div>
                     </div>
@@ -837,12 +750,11 @@ export default function HomePage() {
                 >
                   <div className="choose-twelve__content">
                     <p>
-                      At Nalanda Learning, we bring together government-aligned
-                      curriculum, expert-led training, and AI-powered delivery
-                      to offer a truly integrated education experience. Whether
-                      it's empowering early childhood educators or enabling
-                      global teaching careers, we ensure that every learner has
-                      the tools to succeed.
+                      At Nalanda Learning, we bring together government-aligned curriculum,
+                      expert-led training, and AI-powered delivery to offer a truly integrated
+                      education experience. Whether it's empowering early childhood educators or
+                      enabling global teaching careers, we ensure that every learner has the tools
+                      to succeed.
                     </p>
                     <div className="list mt-30 mb-40">
                       <ul>
@@ -946,12 +858,7 @@ export default function HomePage() {
                         </li>
                       </ul>
                     </div>
-                    <a
-                      href="/about"
-                      className="btn-one"
-                      data-splitting=""
-                      data-text="About Us"
-                    >
+                    <a href="/about" className="btn-one" data-splitting="" data-text="About Us">
                       About Us
                     </a>
                   </div>
@@ -963,20 +870,17 @@ export default function HomePage() {
                   aria-labelledby="contact-tab"
                 >
                   <p>
-                    Nalanda Learning connects the dots from training to
-                    placement — integrating curriculum design, skill
-                    certification, AI-powered platforms, and job-matching
-                    support. Our process is scalable, technology-driven, and
-                    outcome-focused.
+                    Nalanda Learning connects the dots from training to placement — integrating
+                    curriculum design, skill certification, AI-powered platforms, and job-matching
+                    support. Our process is scalable, technology-driven, and outcome-focused.
                   </p>
                   <div className="work-ten__wrp">
                     <div className="work-ten__item text-start">
                       <div className="content">
                         <h4 className="title">01. Enrollment & Orientation</h4>
                         <p>
-                          We onboard aspiring teachers and partner schools
-                          through our national campaigns, enabling access to
-                          certified training under MEPSC guidelines.
+                          We onboard aspiring teachers and partner schools through our national
+                          campaigns, enabling access to certified training under MEPSC guidelines.
                         </p>
                       </div>
                     </div>
@@ -984,9 +888,8 @@ export default function HomePage() {
                       <div className="content">
                         <h4 className="title">02. Training & Certification</h4>
                         <p>
-                          Teachers undergo guided training via mobile-first LMS,
-                          in-person modules, or hybrid delivery. Programs are
-                          NSQF-aligned and digitally certified.
+                          Teachers undergo guided training via mobile-first LMS, in-person modules,
+                          or hybrid delivery. Programs are NSQF-aligned and digitally certified.
                         </p>
                       </div>
                     </div>
@@ -994,9 +897,9 @@ export default function HomePage() {
                       <div className="content">
                         <h4 className="title">03. Placement & Progression</h4>
                         <p>
-                          After certification, candidates are automatically
-                          profiled and connected to job opportunities, both
-                          domestically and abroad through our nvoco network.
+                          After certification, candidates are automatically profiled and connected
+                          to job opportunities, both domestically and abroad through our nvoco
+                          network.
                         </p>
                       </div>
                     </div>
@@ -1015,7 +918,7 @@ export default function HomePage() {
           </div>
           <div className="col-xl-5 order-1 order-xl-2">
             <div className="choose-one__image gsap__parallax">
-              <img src="images/choose/choose-one-image.jpg" alt="image" />
+              <img src="/images/choose/choose-one-image.jpg" alt="image" />
               <div className="choose-one__rectangle">
                 <div className="item wow" />
                 <div className="item-dark wow" />
@@ -1038,60 +941,57 @@ export default function HomePage() {
           </div>
           <div className="work-eleven__wrp">
             <div className="work-eleven__line">
-              <img src="images/shape/work-eleven-line.png" alt="shape" />
+              <img src="/images/shape/work-eleven-line.png" alt="shape" />
             </div>
             <div className="work-eleven__item have-margin">
               <div className="image">
-                <img src="images/work/work-ten-image1.png" alt="image" />
+                <img src="/images/work/work-ten-image1.png" alt="image" />
                 <span className="number">1</span>
               </div>
               <div className="content">
                 <h4 className="title">Outreach & Enrollment</h4>
                 <p>
-                  We connect with schools, CSR partners, and governments to
-                  enroll teachers into MEPSC-certified programs via digital and
-                  on-ground campaigns.
+                  We connect with schools, CSR partners, and governments to enroll teachers into
+                  MEPSC-certified programs via digital and on-ground campaigns.
                 </p>
               </div>
             </div>
             <div className="work-eleven__item">
               <div className="image">
-                <img src="images/work/work-ten-image2.png" alt="image" />
+                <img src="/images/work/work-ten-image2.png" alt="image" />
                 <span className="number">2</span>
               </div>
               <div className="content">
                 <h4 className="title">Training & Delivery</h4>
                 <p>
-                  Learners access guided training through our AI-powered LMS,
-                  in-person sessions, or hybrid formats — all aligned to NEP
-                  2020 and NSQF standards.
+                  Learners access guided training through our AI-powered LMS, in-person sessions, or
+                  hybrid formats — all aligned to NEP 2020 and NSQF standards.
                 </p>
               </div>
             </div>
             <div className="work-eleven__item have-margin">
               <div className="image">
-                <img src="images/work/work-ten-image3.png" alt="image" />
+                <img src="/images/work/work-ten-image3.png" alt="image" />
                 <span className="number">3</span>
               </div>
               <div className="content">
                 <h4 className="title">Certification & Assessment</h4>
                 <p>
-                  Each participant undergoes real-time assessment, earns digital
-                  credentials, and becomes part of our verified teacher network.
+                  Each participant undergoes real-time assessment, earns digital credentials, and
+                  becomes part of our verified teacher network.
                 </p>
               </div>
             </div>
             <div className="work-eleven__item">
               <div className="image">
-                <img src="images/work/work-ten-image4.png" alt="image" />
+                <img src="/images/work/work-ten-image4.png" alt="image" />
                 <span className="number">4</span>
               </div>
               <div className="content">
                 <h4 className="title">Placement & Progression</h4>
                 <p>
-                  Qualified teachers are placed in schools or international
-                  roles via our nvoco platform — bridging training to
-                  employment.
+                  Qualified teachers are placed in schools or international roles via our nvoco
+                  platform — bridging training to employment.
                 </p>
               </div>
             </div>
@@ -1106,11 +1006,11 @@ export default function HomePage() {
           className="video__wrp"
           data-speed="0.3"
           data-parallax="scroll"
-          data-image-src="images/bg/video-bg.jpg"
+          data-image-src="/images/bg/video-bg.jpg"
         >
           <div className="video__btn">
             <div className="btn-video video-pulse">
-              <a className="video-popup" href="images/video/video.mp4">
+              <a className="video-popup" href="/images/video/video.mp4">
                 <i className="fa-sharp fa-light fa-play" />
               </a>
             </div>
@@ -1233,10 +1133,9 @@ export default function HomePage() {
                     </svg>
                   </div>
                   <p>
-                    Through Nalanda's community platform, I connected with
-                    educators across India and shared practical classroom ideas
-                    that truly made an impact. It feels like a family that grows
-                    together.
+                    Through Nalanda's community platform, I connected with educators across India
+                    and shared practical classroom ideas that truly made an impact. It feels like a
+                    family that grows together.
                   </p>
                 </div>
                 <h4 className="title">
@@ -1246,10 +1145,7 @@ export default function HomePage() {
             </div>
             <div className="col-lg-4">
               <div className="about__item about__funfact">
-                <h4
-                  className="color-light wow splt-txt mb-40"
-                  data-splitting=""
-                >
+                <h4 className="color-light wow splt-txt mb-40" data-splitting="">
                   Connected Learning. Shared Growth.
                 </h4>
                 <div>
@@ -1416,13 +1312,11 @@ export default function HomePage() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Nalanda Learning is an innovative educational platform
-                          offering a range of training programs designed to
-                          enhance the skills of educators, professionals, and
-                          students. We provide personalized, tech-driven
-                          learning experiences that empower individuals at all
-                          stages of their educational journey, aligned with
-                          modern educational standards like NEP 2020.
+                          Nalanda Learning is an innovative educational platform offering a range of
+                          training programs designed to enhance the skills of educators,
+                          professionals, and students. We provide personalized, tech-driven learning
+                          experiences that empower individuals at all stages of their educational
+                          journey, aligned with modern educational standards like NEP 2020.
                         </p>
                       </div>
                     </div>
@@ -1447,28 +1341,25 @@ export default function HomePage() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Nalanda Learning offers a variety of programs that
-                          cater to different learning needs:
+                          Nalanda Learning offers a variety of programs that cater to different
+                          learning needs:
                         </p>
                         <ul>
                           <li>
-                            <strong>Teacher Training Programs:</strong> Focused
-                            on enhancing pedagogical skills.
+                            <strong>Teacher Training Programs:</strong> Focused on enhancing
+                            pedagogical skills.
                           </li>
                           <li>
-                            <strong>Professional Development Courses:</strong>{' '}
-                            For skill-building in various industries.
+                            <strong>Professional Development Courses:</strong> For skill-building in
+                            various industries.
                           </li>
                           <li>
-                            <strong>
-                              Early Childhood Education (ECE) Courses:
-                            </strong>{' '}
-                            Designed for the development of young learners.
+                            <strong>Early Childhood Education (ECE) Courses:</strong> Designed for
+                            the development of young learners.
                           </li>
                           <li>
-                            <strong>Technology-Enabled Learning:</strong>{' '}
-                            Leveraging digital tools and platforms for a modern
-                            learning experience.
+                            <strong>Technology-Enabled Learning:</strong> Leveraging digital tools
+                            and platforms for a modern learning experience.
                           </li>
                         </ul>
                       </div>
@@ -1494,11 +1385,10 @@ export default function HomePage() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Yes, Nalanda Learning’s programs are accredited and
-                          recognized by leading educational authorities and
-                          institutions. Many of our programs are aligned with
-                          NEP 2020 and adhere to recognized standards to ensure
-                          high-quality learning and real-world applicability.
+                          Yes, Nalanda Learning’s programs are accredited and recognized by leading
+                          educational authorities and institutions. Many of our programs are aligned
+                          with NEP 2020 and adhere to recognized standards to ensure high-quality
+                          learning and real-world applicability.
                         </p>
                       </div>
                     </div>
@@ -1523,12 +1413,10 @@ export default function HomePage() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Enrolling in a program with Nalanda Learning is easy!
-                          Simply visit our website, browse through our program
-                          offerings, and choose the course that suits your
-                          learning goals. You can enroll directly online by
-                          filling out the registration form and selecting your
-                          preferred payment method.
+                          Enrolling in a program with Nalanda Learning is easy! Simply visit our
+                          website, browse through our program offerings, and choose the course that
+                          suits your learning goals. You can enroll directly online by filling out
+                          the registration form and selecting your preferred payment method.
                         </p>
                       </div>
                     </div>
@@ -1539,7 +1427,7 @@ export default function HomePage() {
           </div>
           <div className="col-xl-6">
             <div className="faq__image gsap__parallax imageRightToLeft wow">
-              <img src="images/faq/faq-image.jpg" alt="image" />
+              <img src="/images/faq/faq-image.jpg" alt="image" />
             </div>
           </div>
         </div>

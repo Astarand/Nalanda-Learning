@@ -2,6 +2,16 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 export default function ContactPage() {
+  useEffect(() => {
+    // ✅ Apply data-background images
+    const bgElements = document.querySelectorAll('[data-background]');
+    bgElements.forEach((el) => {
+      const bg = el.getAttribute('data-background');
+      if (bg) {
+        el.style.backgroundImage = `url(${bg})`;
+      }
+    });
+  }, []);
   return (
     <>
       {/* Breadcrumb area start here */}
@@ -52,9 +62,7 @@ export default function ContactPage() {
                 <li className="list-inline-item" style={{ color: '#fff' }}>
                   <i className="fa fa-angle-right" />
                 </li>
-                <li className="list-inline-item text-white fw-semibold">
-                  Contact
-                </li>
+                <li className="list-inline-item text-white fw-semibold">Contact</li>
               </ul>
             </div>
           </div>
@@ -93,18 +101,19 @@ export default function ContactPage() {
               <div className="col-lg-4 d-flex">
                 <div
                   className="funfact-eight__item flex-fill d-flex flex-column"
-                  data-background="images/funfact/funfact-eight-image1.jpg"
+                  data-background="/images/funfact/funfact-eight-image1.jpg"
                   style={{
-                    backgroundImage:
-                      'url("images/funfact/funfact-eight-image1.jpg")',
+                    backgroundImage: 'url("/images/funfact/funfact-eight-image1.jpg")',
                     height: '100%',
                   }}
                 >
                   <div className="inner-box flex-grow-1 d-flex flex-column">
                     <h3 className="title">Address</h3>
                     <p className="text mb-0">
-                      Nalanda Learning Systems Pvt Ltd<br />
-                      1st Floor, 1/22, Poddar Nagar, Jodhpur Park,<br />
+                      Nalanda Learning Systems Pvt Ltd
+                      <br />
+                      1st Floor, 1/22, Poddar Nagar, Jodhpur Park,
+                      <br />
                       Kolkata, West Bengal 700068, India
                     </p>
                   </div>
@@ -113,17 +122,17 @@ export default function ContactPage() {
               <div className="col-lg-4 d-flex">
                 <div
                   className="funfact-eight__item flex-fill d-flex flex-column"
-                  data-background="images/funfact/funfact-eight-image2.jpg"
+                  data-background="/images/funfact/funfact-eight-image2.jpg"
                   style={{
-                    backgroundImage:
-                      'url("images/funfact/funfact-eight-image2.jpg")',
+                    backgroundImage: 'url("/images/funfact/funfact-eight-image2.jpg")',
                     height: '100%',
                   }}
                 >
                   <div className="inner-box flex-grow-1 d-flex flex-column">
                     <h3 className="title">Contact</h3>
                     <p className="text mb-0">
-                      Phone: <a href="tel:+913340601234">+91 33 4060 1234</a><br />
+                      Phone: <a href="tel:+913340601234">+91 33 4060 1234</a>
+                      <br />
                       Mobile: <a href="tel:+919830012345">+91 98300 12345</a>
                     </p>
                   </div>
@@ -132,17 +141,17 @@ export default function ContactPage() {
               <div className="col-lg-4 d-flex">
                 <div
                   className="funfact-eight__item flex-fill d-flex flex-column"
-                  data-background="images/funfact/funfact-eight-image2.jpg"
+                  data-background="/images/funfact/funfact-eight-image2.jpg"
                   style={{
-                    backgroundImage:
-                      'url("images/funfact/funfact-eight-image2.jpg")',
+                    backgroundImage: 'url("/images/funfact/funfact-eight-image2.jpg")',
                     height: '100%',
                   }}
                 >
                   <div className="inner-box flex-grow-1 d-flex flex-column">
                     <h3 className="title">Email</h3>
                     <p className="text mb-0">
-                      <a href="mailto:info@nalandalearning.com">info@nalandalearning.com</a><br />
+                      <a href="mailto:info@nalandalearning.com">info@nalandalearning.com</a>
+                      <br />
                       <a href="mailto:support@nalandalearning.com">support@nalandalearning.com</a>
                     </p>
                   </div>
@@ -180,19 +189,14 @@ export default function ContactPage() {
                       We’re here to help
                     </h2>
                     <p className="mt-3">
-                      Need help with a project or have a question about our
-                      work? We're here for you.
+                      Need help with a project or have a question about our work? We're here for
+                      you.
                     </p>
                   </div>
                   <form action="#0">
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email Address" />
-                    <textarea
-                      name="masage"
-                      id="masage"
-                      placeholder="Message"
-                      defaultValue={''}
-                    />
+                    <textarea name="masage" id="masage" placeholder="Message" defaultValue={''} />
                     <button
                       className="btn-one rounded-0 w-100"
                       data-splitting=""

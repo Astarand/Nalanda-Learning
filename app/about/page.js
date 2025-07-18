@@ -2,13 +2,81 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 export default function AboutPage() {
+  useEffect(() => {
+    // ✅ Apply data-background images
+    const bgElements = document.querySelectorAll('[data-background]');
+    bgElements.forEach((el) => {
+      const bg = el.getAttribute('data-background');
+      if (bg) {
+        el.style.backgroundImage = `url(${bg})`;
+      }
+    });
+
+    // Initialize project slider
+    if (window.Swiper) {
+      const projectSlider = new window.Swiper('.project__slider', {
+        spaceBetween: 0,
+        speed: 3000,
+        pagination: false,
+        navigation: {
+          nextEl: '.project__arry-next',
+          prevEl: '.project__arry-prev',
+        },
+        mousewheel: false,
+        keyboard: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        loop: true,
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 2,
+          },
+          787: {
+            slidesPerView: 3,
+          },
+          991: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+      });
+
+      // Handle tab switching for project images
+      const projectSlides = document.querySelectorAll('.project__slider .swiper-slide');
+      projectSlides.forEach((slide) => {
+        slide.addEventListener('mouseenter', function () {
+          const tabId = this.getAttribute('data-tab');
+
+          // Remove active class from all slides
+          projectSlides.forEach((s) => s.classList.remove('active'));
+          // Add active class to current slide
+          this.classList.add('active');
+
+          // Hide all images
+          document.querySelectorAll('.project__image .tab-img').forEach((img) => {
+            img.classList.remove('active');
+          });
+
+          // Show current image
+          const activeImg = document.getElementById(tabId);
+          if (activeImg) {
+            activeImg.classList.add('active');
+          }
+        });
+      });
+    }
+  }, []);
   return (
     <>
       {/* Breadcrumb area start here */}
-      <section
-        className="breadcrumb-area"
-        data-background="images/banner/banner-inner.jpg"
-      >
+      <section className="breadcrumb-area" data-background="/images/banner/banner-inner.jpg">
         <div className="container">
           <div className="breadcrumb__wrp">
             <div className="breadcrumb__item">
@@ -34,8 +102,7 @@ export default function AboutPage() {
           <div className="section-header text-center mb-80">
             <h6>About US</h6>
             <h2 className="wow splt-txt" data-splitting="">
-              Guardians of Educational Excellence <br /> Our Mission and
-              Expertise
+              Guardians of Educational Excellence <br /> Our Mission and Expertise
             </h2>
           </div>
           <div className="about-eleven__wrp">
@@ -56,24 +123,20 @@ export default function AboutPage() {
                       <br /> the Digital Landscah{' '}
                     </h4>
                     <p className="text mt-20">
-                      At Nalanda Learning, our mission is to revolutionize
-                      education through AI-powered solutions, robust teacher
-                      training, and global teaching career pathways. We envision
-                      an India where every educator is equipped to inspire,
+                      At Nalanda Learning, our mission is to revolutionize education through
+                      AI-powered solutions, robust teacher training, and global teaching career
+                      pathways. We envision an India where every educator is equipped to inspire,
                       innovate, and lead in the classroom and beyond.
                     </p>
                     <p>
-                      We approached the future of learning with a
-                      research-backed approach — combining digital tools,
-                      practical skills, and scalable delivery models that align
-                      with NEP 2020. Every decision we make is rooted in
-                      measurable impact, community upliftment, and long-term
-                      sustainability.
+                      We approached the future of learning with a research-backed approach —
+                      combining digital tools, practical skills, and scalable delivery models that
+                      align with NEP 2020. Every decision we make is rooted in measurable impact,
+                      community upliftment, and long-term sustainability.
                     </p>
                     <p>
-                      With 16+ years of team experience, a vibrant support
-                      network, and thousands of transformed lives, we stand as
-                      the guardians of tomorrow’s educators.
+                      With 16+ years of team experience, a vibrant support network, and thousands of
+                      transformed lives, we stand as the guardians of tomorrow’s educators.
                     </p>
                   </div>
                 </div>
@@ -92,10 +155,7 @@ export default function AboutPage() {
               <div className="col-lg-4">
                 <div className="feature-five__item">
                   <div className="shape">
-                    <img
-                      src="images/shape/feature-five-item-shape.png"
-                      alt="shape"
-                    />
+                    <img src="/images/shape/feature-five-item-shape.png" alt="shape" />
                   </div>
                   <div className="icon">
                     <svg
@@ -151,10 +211,9 @@ export default function AboutPage() {
                       Transforming Education, Empowering Educators
                     </h4>
                     <p className="text">
-                      We aim to revolutionize early childhood education through
-                      certified training, digital tools, and inclusive learning
-                      environments. Our mission is to empower teachers with the
-                      knowledge, skills, and platforms needed to shape
+                      We aim to revolutionize early childhood education through certified training,
+                      digital tools, and inclusive learning environments. Our mission is to empower
+                      teachers with the knowledge, skills, and platforms needed to shape
                       future-ready learners.
                     </p>
                   </div>
@@ -163,10 +222,7 @@ export default function AboutPage() {
               <div className="col-lg-4">
                 <div className="feature-five__item active">
                   <div className="shape">
-                    <img
-                      src="images/shape/feature-five-item-shape.png"
-                      alt="shape"
-                    />
+                    <img src="/images/shape/feature-five-item-shape.png" alt="shape" />
                   </div>
                   <div className="icon">
                     <svg
@@ -192,14 +248,11 @@ export default function AboutPage() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h4 className="title">
-                      Driving Scalable, Inclusive Learning Impact
-                    </h4>
+                    <h4 className="title">Driving Scalable, Inclusive Learning Impact</h4>
                     <p className="text">
-                      From AI-powered teacher training to community platforms
-                      and NEP-aligned certifications, we strive to deliver
-                      measurable learning outcomes, expand global opportunities
-                      for educators, and build a stronger, equitable education
+                      From AI-powered teacher training to community platforms and NEP-aligned
+                      certifications, we strive to deliver measurable learning outcomes, expand
+                      global opportunities for educators, and build a stronger, equitable education
                       future.
                     </p>
                   </div>
@@ -208,10 +261,7 @@ export default function AboutPage() {
               <div className="col-lg-4">
                 <div className="feature-five__item">
                   <div className="shape">
-                    <img
-                      src="images/shape/feature-five-item-shape.png"
-                      alt="shape"
-                    />
+                    <img src="/images/shape/feature-five-item-shape.png" alt="shape" />
                   </div>
                   <div className="icon">
                     <svg
@@ -275,11 +325,10 @@ export default function AboutPage() {
                       A Skilled India Led by Empowered Educators
                     </h4>
                     <p className="text">
-                      We envision a nation where every educator is trained,
-                      every child has access to quality learning, and technology
-                      bridges the gaps in education. Through partnerships,
-                      innovation, and community, we aspire to become India’s
-                      most trusted education ecosystem.
+                      We envision a nation where every educator is trained, every child has access
+                      to quality learning, and technology bridges the gaps in education. Through
+                      partnerships, innovation, and community, we aspire to become India’s most
+                      trusted education ecosystem.
                     </p>
                   </div>
                 </div>
@@ -293,7 +342,7 @@ export default function AboutPage() {
       {/* Solution area start here */}
       <section
         className="solution-area have-padding pb-130"
-        data-background="images/bg/solution-bg-image.jpg"
+        data-background="/images/bg/solution-bg-image.jpg"
       >
         <div className="container">
           <div className="solution__wrp">
@@ -310,9 +359,8 @@ export default function AboutPage() {
                     data-wow-delay="00ms"
                     data-wow-duration="1500ms"
                   >
-                    From aspiring educators to experienced professionals, our
-                    learning ecosystem supports every journey through
-                    specialized, impactful offerings.
+                    From aspiring educators to experienced professionals, our learning ecosystem
+                    supports every journey through specialized, impactful offerings.
                   </p>
                 </div>
               </div>
@@ -325,10 +373,7 @@ export default function AboutPage() {
               >
                 <div className="solution__item">
                   <div className="image">
-                    <img
-                      src="images/solution/solution-image1.jpg"
-                      alt="image"
-                    />
+                    <img src="/images/solution/solution-image1.jpg" alt="image" />
                   </div>
                   <div className="content">
                     <h5 className="sub-title text-white">
@@ -337,10 +382,9 @@ export default function AboutPage() {
                     <div className="title">
                       <span className="number">1</span>
                       <p className="text-white">
-                        Unlock career opportunities with government-certified
-                        pre-service training, aligned with NEP and ECCE
-                        standards to prepare for India’s evolving education
-                        landscape.
+                        Unlock career opportunities with government-certified pre-service training,
+                        aligned with NEP and ECCE standards to prepare for India’s evolving
+                        education landscape.
                       </p>
                     </div>
                   </div>
@@ -353,21 +397,15 @@ export default function AboutPage() {
               >
                 <div className="solution__item">
                   <div className="image">
-                    <img
-                      src="images/solution/solution-image2.jpg"
-                      alt="image"
-                    />
+                    <img src="/images/solution/solution-image2.jpg" alt="image" />
                   </div>
                   <div className="content">
-                    <h5 className="sub-title text-white">
-                      Micro-Credentials & Certifications
-                    </h5>
+                    <h5 className="sub-title text-white">Micro-Credentials & Certifications</h5>
                     <div className="title">
                       <span className="number">2</span>
                       <p className="text-white">
-                        Access continuous professional development (CPD) modules
-                        to gain in-demand skills in digital pedagogy, classroom
-                        management, and inclusive teaching.
+                        Access continuous professional development (CPD) modules to gain in-demand
+                        skills in digital pedagogy, classroom management, and inclusive teaching.
                       </p>
                     </div>
                   </div>
@@ -380,22 +418,16 @@ export default function AboutPage() {
               >
                 <div className="solution__item">
                   <div className="image">
-                    <img
-                      src="images/solution/solution-image3.jpg"
-                      alt="image"
-                    />
+                    <img src="/images/solution/solution-image3.jpg" alt="image" />
                   </div>
                   <div className="content">
-                    <h5 className="sub-title text-white">
-                      Scalable Training for Social Impact
-                    </h5>
+                    <h5 className="sub-title text-white">Scalable Training for Social Impact</h5>
                     <div className="title">
                       <span className="number">3</span>
                       <p className="text-white">
-                        Partner with us to train educators at scale, track
-                        impact through digital dashboards, and meet regulatory
-                        and CSR compliance through inclusive learning
-                        interventions.
+                        Partner with us to train educators at scale, track impact through digital
+                        dashboards, and meet regulatory and CSR compliance through inclusive
+                        learning interventions.
                       </p>
                     </div>
                   </div>
@@ -417,7 +449,7 @@ export default function AboutPage() {
                   <div className="team-details__top-left">
                     <div className="team-details__top-img">
                       {' '}
-                      <img src="images/resource/director.jpg" alt="" />
+                      <img src="/images/resource/director.jpg" alt="" />
                       <div className="team-details__big-text" />
                     </div>
                   </div>
@@ -425,25 +457,19 @@ export default function AboutPage() {
                 <div className="col-xl-6 col-lg-6">
                   <div className="team-details__top-right">
                     <div className="team-details__top-content">
-                      <h3 className="team-details__top-name">
-                        Tamal Mukherjee
-                      </h3>
+                      <h3 className="team-details__top-name">Tamal Mukherjee</h3>
                       <p className="team-details__top-title">Founder & CEO</p>
                       <p className="team-details__top-text-1 mt-5">
-                        Tamal Mukherjee is a visionary leader in early childhood
-                        education with over 15 years of experience transforming
-                        educational paradigms across India. As the founder of
-                        Nalanda Learning, he has pioneered innovative approaches
-                        that blend traditional values with modern pedagogical
-                        methods.
+                        Tamal Mukherjee is a visionary leader in early childhood education with over
+                        15 years of experience transforming educational paradigms across India. As
+                        the founder of Nalanda Learning, he has pioneered innovative approaches that
+                        blend traditional values with modern pedagogical methods.
                       </p>
                       <p>
-                        Under his leadership, Nalanda has grown from a small
-                        initiative to India's leading early childhood education
-                        network, impacting thousands of schools and millions of
-                        children. His expertise in curriculum development,
-                        teacher training, and educational technology has been
-                        recognized nationally.
+                        Under his leadership, Nalanda has grown from a small initiative to India's
+                        leading early childhood education network, impacting thousands of schools
+                        and millions of children. His expertise in curriculum development, teacher
+                        training, and educational technology has been recognized nationally.
                       </p>
                       <div className="team-details__social">
                         <a className="text-white" href="#">
@@ -500,7 +526,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/chirabrata.jpg" alt="image" />
+                  <img src="/images/team/chirabrata.jpg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="#">
@@ -537,7 +563,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/Chrish.jpeg" alt="image" />
+                  <img src="/images/team/Chrish.jpeg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="#">
@@ -574,7 +600,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/sumit.jpg" alt="image" />
+                  <img src="/images/team/Sumit.jpg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="#">
@@ -612,7 +638,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/team-four-image4.jpg" alt="image" />
+                  <img src="/images/team/team-four-image4.jpg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="page-team-details.html">
@@ -649,7 +675,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/team-four-image5.jpg" alt="image" />
+                  <img src="/images/team/team-four-image5.jpg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="page-team-details.html">
@@ -686,7 +712,7 @@ export default function AboutPage() {
                   </ul>
                 </div>
                 <div className="team__image">
-                  <img src="images/team/team-four-image6.jpg" alt="image" />
+                  <img src="/images/team/team-four-image6.jpg" alt="image" />
                 </div>
                 <h4>
                   <a className="hover-link" href="page-team-details.html">
@@ -713,9 +739,8 @@ export default function AboutPage() {
                     <span>01</span>
                     <h4>Personalized Consultation</h4>
                     <p>
-                      We begin by understanding your institutional goals or
-                      individual aspirations, through structured discovery
-                      sessions and planning workshops.
+                      We begin by understanding your institutional goals or individual aspirations,
+                      through structured discovery sessions and planning workshops.
                     </p>
                   </div>
                 </a>
@@ -728,9 +753,8 @@ export default function AboutPage() {
                       Customized Learning <br /> Blueprint
                     </h4>
                     <p>
-                      Blueprint Our team prepares a detailed implementation plan
-                      including training models, digital tools, and timeline
-                      based on NEP & ECCE standards.
+                      Blueprint Our team prepares a detailed implementation plan including training
+                      models, digital tools, and timeline based on NEP & ECCE standards.
                     </p>
                   </div>
                 </a>
@@ -741,9 +765,8 @@ export default function AboutPage() {
                     <span>03</span>
                     <h4>Strategic Implementation</h4>
                     <p>
-                      Programs are rolled out with a blend of micro-credentials,
-                      expert trainers, interactive content, and robust tracking
-                      systems.
+                      Programs are rolled out with a blend of micro-credentials, expert trainers,
+                      interactive content, and robust tracking systems.
                     </p>
                   </div>
                 </a>
@@ -756,9 +779,8 @@ export default function AboutPage() {
                       Support <br /> Impact & Scale-Up
                     </h4>
                     <p>
-                      We provide long-term mentorship, real-time dashboards,
-                      compliance support, and help you scale your training
-                      impact sustainably.
+                      We provide long-term mentorship, real-time dashboards, compliance support, and
+                      help you scale your training impact sustainably.
                     </p>
                   </div>
                 </a>
@@ -767,50 +789,44 @@ export default function AboutPage() {
                 <a href="#" className="project__item">
                   <div className="content">
                     <span>05</span>
-                    <h4>
-                      Bringing Quality Early Childhood Education to Your
-                      Doorstep
-                    </h4>
+                    <h4>Bringing Quality Early Childhood Education to Your Doorstep</h4>
                     <p>
-                      We offer creative, engaging, and foundational learning for
-                      young children.
+                      We offer creative, engaging, and foundational learning for young children.
                     </p>
                   </div>
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-6">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>06</span>
                     <h4>Unlock Global Opportunities with Novoco</h4>
                     <p>
-                      We provide top-tier international placements and training
-                      for professionals.
+                      We provide top-tier international placements and training for professionals.
                     </p>
                   </div>
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-7">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>07</span>
                     <h4>Nurturing Educators with Teacher Training Programs</h4>
                     <p>
-                      We provide comprehensive training programs to develop
-                      teachers' skills and enhance classroom effectiveness.
+                      We provide comprehensive training programs to develop teachers' skills and
+                      enhance classroom effectiveness.
                     </p>
                   </div>
                 </a>
               </div>
               <div className="swiper-slide" data-tab="tab-8">
-                <a href="page-project-details.html" className="project__item">
+                <a href="#" className="project__item">
                   <div className="content">
                     <span>08</span>
                     <h4>Our Scalable B2B SaaS Platform</h4>
                     <p>
-                      Our platform offers customizable solutions that drive
-                      efficiency, automation, and growth for businesses across
-                      industries.
+                      Our platform offers customizable solutions that drive efficiency, automation,
+                      and growth for businesses across industries.
                     </p>
                   </div>
                 </a>
@@ -826,54 +842,14 @@ export default function AboutPage() {
             </button>
           </div>
           <div className="project__image">
-            <img
-              id="tab-1"
-              className="tab-img active"
-              src="images/project/1.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-2"
-              className="tab-img"
-              src="images/project/2.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-3"
-              className="tab-img"
-              src="images/project/3.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-4"
-              className="tab-img"
-              src="images/project/4.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-5"
-              className="tab-img"
-              src="images/project/5.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-6"
-              className="tab-img"
-              src="images/project/6.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-7"
-              className="tab-img"
-              src="images/project/7.jpg"
-              alt="image"
-            />
-            <img
-              id="tab-8"
-              className="tab-img"
-              src="images/project/8.jpg"
-              alt="image"
-            />
+            <img id="tab-1" className="tab-img active" src="/images/project/1.jpg" alt="image" />
+            <img id="tab-2" className="tab-img" src="/images/project/2.jpg" alt="image" />
+            <img id="tab-3" className="tab-img" src="/images/project/3.jpg" alt="image" />
+            <img id="tab-4" className="tab-img" src="/images/project/4.jpg" alt="image" />
+            <img id="tab-5" className="tab-img" src="/images/project/5.jpg" alt="image" />
+            <img id="tab-6" className="tab-img" src="/images/project/6.jpg" alt="image" />
+            <img id="tab-7" className="tab-img" src="/images/project/7.jpg" alt="image" />
+            <img id="tab-8" className="tab-img" src="/images/project/8.jpg" alt="image" />
           </div>
         </div>
       </section>
