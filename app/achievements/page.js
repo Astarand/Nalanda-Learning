@@ -308,8 +308,8 @@ export default function AchievementsPage() {
                   </div>
                   <p className="text mt-50">
                     Nalanda Learning provides a holistic approach to education through expert
-                    consultancy and specialized training. We focus on data-driven analysis,
-                    personalized teacher training programs, and strategic educational solutions,
+                    consultancy and specialised training. We focus on data-driven analysis,
+                    personalised teacher training programmes, and strategic educational solutions,
                     creating impactful opportunities for educators and institutions to thrive.
                   </p>
                 </div>

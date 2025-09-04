@@ -9,18 +9,12 @@ export default function Footer() {
         <div className="footer__wrp pt-130 pb-130">
           <div className="footer__left">
             <Link href="/" className="logo">
-              <Image
-                src="/images/logo/nalanda_logo_white.png"
-                alt="logo"
-                width={120}
-                height={80}
-              />
+              <Image src="/images/logo/nalanda_logo_white.png" alt="logo" width={120} height={80} />
             </Link>
             <p className="mt-30">
-              Nalanda Learning is India’s most integrated education impact
-              platform — connecting early childhood teacher training, global
-              teaching careers, and AI-powered learning infrastructure to
-              deliver real results. With backing from MEPSC, PSACWA, and nvoco,
+              Nalanda Learning is India’s most integrated education impact platform — connecting
+              early childhood teacher training, global teaching careers, and AI-powered learning
+              infrastructure to deliver real results. With backing from MEPSC, PSACWA, and nvoco,
               we’re shaping the future of learning.
             </p>
           </div>
@@ -34,9 +28,6 @@ export default function Footer() {
                   </li>
                   <li>
                     <a href="#">AI-Powered Learning Platform</a>
-                  </li>
-                  <li>
-                    <a href="#">Global Teaching Career Pathways</a>
                   </li>
                   <li>
                     <a href="#">Curriculum Development</a>
@@ -72,11 +63,7 @@ export default function Footer() {
                 </h4>
                 <ul>
                   <li>
-                    <a href="#0">
-                      {' '}
-                      A.E. Block sector 1, AE Block, Sector 1, Bidhannagar,
-                      Kolkata, West Bengal 700064
-                    </a>
+                    <a href="#0"> AE Block, Sector 1, Bidhannagar, Kolkata, West Bengal, 700064</a>
                   </li>
                   <li>
                     <a href="#0">1800 203 3015</a>
@@ -134,10 +121,7 @@ export default function Footer() {
                         d="M12.4991 13.4999V9.10492C12.4991 6.94492 12.0341 5.29492 9.51414 5.29492C8.29914 5.29492 7.48914 5.95492 7.15914 6.58492H7.12914V5.48992H4.74414V13.4999H7.23414V9.52492C7.23414 8.47492 7.42914 7.46992 8.71914 7.46992C9.99414 7.46992 10.0091 8.65492 10.0091 9.58492V13.4849H12.4991V13.4999Z"
                         fill="white"
                       />
-                      <path
-                        d="M0.695312 5.49023H3.18531V13.5002H0.695312V5.49023Z"
-                        fill="white"
-                      />
+                      <path d="M0.695312 5.49023H3.18531V13.5002H0.695312V5.49023Z" fill="white" />
                       <path
                         d="M1.94 1.5C1.145 1.5 0.5 2.145 0.5 2.94C0.5 3.735 1.145 4.395 1.94 4.395C2.735 4.395 3.38 3.735 3.38 2.94C3.38 2.145 2.735 1.5 1.94 1.5Z"
                         fill="white"
@@ -206,8 +190,7 @@ export default function Footer() {
             <div className="row">
               <div className="col-lg-9">
                 <p className="text-left">
-                  &copy; 2025 <a href="#0">Nalanda Learning</a> Design &
-                  Developed by &nbsp;
+                  &copy; 2025 <a href="#0">Nalanda Learning</a> Design & Developed by &nbsp;
                   <a href="#">ClicknGo</a>
                 </p>
               </div>

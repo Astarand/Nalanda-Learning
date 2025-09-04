@@ -123,7 +123,7 @@ export default function AboutPage() {
                       <br /> the Digital Landscah{' '}
                     </h4>
                     <p className="text mt-20">
-                      At Nalanda Learning, our mission is to revolutionize education through
+                      At Nalanda Learning, our mission is to revolutionise education through
                       AI-powered solutions, robust teacher training, and global teaching career
                       pathways. We envision an India where every educator is equipped to inspire,
                       innovate, and lead in the classroom and beyond.
@@ -135,7 +135,7 @@ export default function AboutPage() {
                       community upliftment, and long-term sustainability.
                     </p>
                     <p>
-                      With 16+ years of team experience, a vibrant support network, and thousands of
+                      With 15+ years of team experience, a vibrant support network, and thousands of
                       transformed lives, we stand as the guardians of tomorrow’s educators.
                     </p>
                   </div>
@@ -360,7 +360,7 @@ export default function AboutPage() {
                     data-wow-duration="1500ms"
                   >
                     From aspiring educators to experienced professionals, our learning ecosystem
-                    supports every journey through specialized, impactful offerings.
+                    supports every journey through specialised, impactful offerings.
                   </p>
                 </div>
               </div>
@@ -469,7 +469,7 @@ export default function AboutPage() {
                         Under his leadership, Nalanda has grown from a small initiative to India's
                         leading early childhood education network, impacting thousands of schools
                         and millions of children. His expertise in curriculum development, teacher
-                        training, and educational technology has been recognized nationally.
+                        training, and educational technology has been recognised nationally.
                       </p>
                       <div className="team-details__social">
                         <a className="text-white" href="#">
@@ -607,7 +607,7 @@ export default function AboutPage() {
                     Sumit Sarkar
                   </a>
                 </h4>
-                <span>CTO</span>
+                <span>Advisor</span>
               </div>
             </div>
 
@@ -734,10 +734,18 @@ export default function AboutPage() {
           <div className="swiper project__slider">
             <div className="swiper-wrapper">
               <div className="swiper-slide" data-tab="tab-1">
-                <a href="#" className="project__item">
+                <a
+                  href="#"
+                  className="project__item"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    // Open consultation form modal here
+                    openConsultationModal();
+                  }}
+                >
                   <div className="content">
                     <span>01</span>
-                    <h4>Personalized Consultation</h4>
+                    <h4>Personalised Consultation</h4>
                     <p>
                       We begin by understanding your institutional goals or individual aspirations,
                       through structured discovery sessions and planning workshops.
@@ -750,11 +758,11 @@ export default function AboutPage() {
                   <div className="content">
                     <span>02</span>
                     <h4>
-                      Customized Learning <br /> Blueprint
+                      Customised Learning <br /> Blueprint
                     </h4>
                     <p>
-                      Blueprint Our team prepares a detailed implementation plan including training
-                      models, digital tools, and timeline based on NEP & ECCE standards.
+                      Our team prepares a detailed implementation plan including training models,
+                      digital tools, and timeline based on NEP & ECCE standards.
                     </p>
                   </div>
                 </a>
@@ -765,7 +773,7 @@ export default function AboutPage() {
                     <span>03</span>
                     <h4>Strategic Implementation</h4>
                     <p>
-                      Programs are rolled out with a blend of micro-credentials, expert trainers,
+                      Programmes are rolled out with a blend of micro-credentials, expert trainers,
                       interactive content, and robust tracking systems.
                     </p>
                   </div>
@@ -789,9 +797,10 @@ export default function AboutPage() {
                 <a href="#" className="project__item">
                   <div className="content">
                     <span>05</span>
-                    <h4>Bringing Quality Early Childhood Education to Your Doorstep</h4>
+                    <h4>Quality Early Childhood Education</h4>
                     <p>
-                      We offer creative, engaging, and foundational learning for young children.
+                      We offer creative, engaging, and foundational learning programmes aligned with
+                      NEP 2020 for young children's development.
                     </p>
                   </div>
                 </a>
@@ -800,9 +809,10 @@ export default function AboutPage() {
                 <a href="#" className="project__item">
                   <div className="content">
                     <span>06</span>
-                    <h4>Unlock Global Opportunities with Novoco</h4>
+                    <h4>Comprehensive Teacher Training Programmes</h4>
                     <p>
-                      We provide top-tier international placements and training for professionals.
+                      We provide MEPSC-certified training programmes to develop teachers' skills and
+                      enhance classroom effectiveness nationwide.
                     </p>
                   </div>
                 </a>
@@ -811,22 +821,10 @@ export default function AboutPage() {
                 <a href="#" className="project__item">
                   <div className="content">
                     <span>07</span>
-                    <h4>Nurturing Educators with Teacher Training Programs</h4>
+                    <h4>Scalable B2B SaaS Platform</h4>
                     <p>
-                      We provide comprehensive training programs to develop teachers' skills and
-                      enhance classroom effectiveness.
-                    </p>
-                  </div>
-                </a>
-              </div>
-              <div className="swiper-slide" data-tab="tab-8">
-                <a href="#" className="project__item">
-                  <div className="content">
-                    <span>08</span>
-                    <h4>Our Scalable B2B SaaS Platform</h4>
-                    <p>
-                      Our platform offers customizable solutions that drive efficiency, automation,
-                      and growth for businesses across industries.
+                      Our platform offers customisable solutions that drive efficiency, automation,
+                      and growth for educational institutions and businesses.
                     </p>
                   </div>
                 </a>
@@ -847,12 +845,12 @@ export default function AboutPage() {
             <img id="tab-3" className="tab-img" src="/images/project/3.jpg" alt="image" />
             <img id="tab-4" className="tab-img" src="/images/project/4.jpg" alt="image" />
             <img id="tab-5" className="tab-img" src="/images/project/5.jpg" alt="image" />
-            <img id="tab-6" className="tab-img" src="/images/project/6.jpg" alt="image" />
-            <img id="tab-7" className="tab-img" src="/images/project/7.jpg" alt="image" />
-            <img id="tab-8" className="tab-img" src="/images/project/8.jpg" alt="image" />
+            <img id="tab-6" className="tab-img" src="/images/project/7.jpg" alt="image" />
+            <img id="tab-7" className="tab-img" src="/images/project/8.jpg" alt="image" />
           </div>
         </div>
       </section>
+
       {/* Project area end here */}
     </>
   );

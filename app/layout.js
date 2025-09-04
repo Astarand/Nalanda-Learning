@@ -4,13 +4,33 @@ import Footer from '../components/Footer';
 import Script from 'next/script';
 
 export const metadata = {
-  title: 'Nalanda learning',
-  description: 'Your description here',
+  title: 'Nalanda Learning - Transforming Education Through Innovation',
+  description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure. MEPSC certified programmes.',
+  keywords: 'education, teacher training, ECCE, MEPSC, early childhood education, AI learning platform, global teaching careers',
+  authors: [{ name: 'Nalanda Learning' }],
+  creator: 'Nalanda Learning',
+  publisher: 'Nalanda Learning',
+  openGraph: {
+    title: 'Nalanda Learning - Transforming Education Through Innovation',
+    description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.',
+    url: 'https://nalandalearning.in',
+    siteName: 'Nalanda Learning',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nalanda Learning - Transforming Education Through Innovation',
+    description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en-GB">
       <head>
         <link rel="shortcut icon" href="/images/favicon.png" />
         {/* CSS links */}

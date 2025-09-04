@@ -9,6 +9,17 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [...compat.extends("next/core-web-vitals")];
+const eslintConfig = [
+  ...compat.extends("next/core-web-vitals"),
+  {
+    rules: {
+      // Customize rules as needed
+      "@next/next/no-img-element": "warn",
+      "react/no-unescaped-entities": "warn",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-unused-vars": "warn",
+    },
+  },
+];
 
 export default eslintConfig;

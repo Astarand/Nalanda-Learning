@@ -137,7 +137,7 @@ h6 {
 h1 {
   font-size: 72px;
   font-weight: 500;
-  line-height: 96px;
+  line-height: 82px;
 }
 @media (max-width: 767px) {
   h1 {
@@ -14380,7 +14380,7 @@ form .error {
   }
 }
 .work-eleven__item {
-  width: 260px;
+  width: 355px;
   text-align: center;
 }
 @media (max-width: 991px) {
