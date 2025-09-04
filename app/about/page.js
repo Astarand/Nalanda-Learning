@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 export default function AboutPage() {
   useEffect(() => {
     // ✅ Apply data-background images
@@ -83,7 +84,7 @@ export default function AboutPage() {
               <h1 className="title">About Us</h1>
               <ul>
                 <li>
-                  <a href="/">Home</a>
+                  <Link href="/">Home</Link>
                 </li>
                 <li>
                   <i className="fa-light fa-angle-right" />

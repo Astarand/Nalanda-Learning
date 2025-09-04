@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function StrategicPartnersPage() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -74,13 +75,13 @@ export default function StrategicPartnersPage() {
                 }}
               >
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href="/"
                     className="text-white text-decoration-none fw-semibold"
                     style={{ transition: 'color 0.2s' }}
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item" style={{ color: '#fff' }}>
                   <i className="fa fa-angle-right" />
