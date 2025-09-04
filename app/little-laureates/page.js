@@ -1,10 +1,8 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+// Components are handled by layout.js
 
 export default function LittleLaureatesPage() {
   return (
     <>
-
       <div
         style={{
           minHeight: '60vh',
@@ -17,7 +15,6 @@ export default function LittleLaureatesPage() {
         <h1>Little Laureates</h1>
         <p>Coming Soon</p>
       </div>
-
     </>
   );
 }

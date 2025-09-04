@@ -1,6 +1,5 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
@@ -164,13 +163,13 @@ export default function AchievementsPage() {
                 }}
               >
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href="/"
                     className="text-white text-decoration-none fw-semibold"
                     style={{ transition: 'color 0.2s' }}
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item" style={{ color: '#fff' }}>
                   <i className="fa fa-angle-right" />

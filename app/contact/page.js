@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import { useEffect } from 'react';
+import Link from 'next/link';
 export default function ContactPage() {
   useEffect(() => {
     // ✅ Apply data-background images
@@ -51,13 +51,13 @@ export default function ContactPage() {
                 }}
               >
                 <li className="list-inline-item">
-                  <a
+                  <Link
                     href="/"
                     className="text-white text-decoration-none fw-semibold"
                     style={{ transition: 'color 0.2s' }}
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="list-inline-item" style={{ color: '#fff' }}>
                   <i className="fa fa-angle-right" />

@@ -1,5 +1,4 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+// Components are handled by layout.js
 
 export default function MEPSCPage() {
   return (

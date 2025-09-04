@@ -1,6 +1,5 @@
 'use client';
-import { useEffect, useRef } from 'react';
-import Image from 'next/image';
+import { useEffect } from 'react';
 import Link from 'next/link';
 export default function AboutPage() {
   useEffect(() => {
@@ -15,7 +14,7 @@ export default function AboutPage() {
 
     // Initialize project slider
     if (window.Swiper) {
-      const projectSlider = new window.Swiper('.project__slider', {
+      new window.Swiper('.project__slider', {
         spaceBetween: 0,
         speed: 3000,
         pagination: false,
