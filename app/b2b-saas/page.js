@@ -429,14 +429,24 @@ export default function B2BSaaSPage() {
                         </li>
                       </ul>
 
-                      <Link
-                        href="https://amazon.in/nalanda-lower-kg"
-                        className="amazon-buy-btn"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-amazon"></i>
-                        Buy on Amazon
-                      </Link>
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-lower-kg"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-lower-kg"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                      </div>
                     </div>
 
                     <div className="book-content" id="nursery-content">
@@ -460,14 +470,24 @@ export default function B2BSaaSPage() {
                         </li>
                       </ul>
 
-                      <Link
-                        href="https://amazon.in/nalanda-nursery"
-                        className="amazon-buy-btn"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-amazon"></i>
-                        Buy on Amazon
-                      </Link>
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-nursery"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-nursery"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                      </div>
                     </div>
 
                     <div className="book-content" id="playgroup-content">
@@ -491,14 +511,24 @@ export default function B2BSaaSPage() {
                         </li>
                       </ul>
 
-                      <Link
-                        href="https://amazon.in/nalanda-playgroup"
-                        className="amazon-buy-btn"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-amazon"></i>
-                        Buy on Amazon
-                      </Link>
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-playgroup"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-playgroup"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                      </div>
                     </div>
 
                     <div className="book-content" id="senior-kg-content">
@@ -521,14 +551,24 @@ export default function B2BSaaSPage() {
                           <i className="fa-solid fa-check"></i> Critical thinking development
                         </li>
                       </ul>
-                      <Link
-                        href="https://amazon.in/nalanda-senior-kg"
-                        className="amazon-buy-btn"
-                        target="_blank"
-                      >
-                        <i className="fa-brands fa-amazon"></i>
-                        Buy on Amazon
-                      </Link>
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-senior-kg"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-senior-kg"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                      </div>
                     </div>
                   </div>
                 </div>

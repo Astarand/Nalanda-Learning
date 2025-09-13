@@ -3775,8 +3775,8 @@ html {
 }
 
 .enhanced-partner-card .govt-badge {
-  background: #dc2626;
-  color: white;
+  background: #1e40af;
+  color: #fff;
   padding: 4px 12px;
   border-radius: 12px;
   font-size: 11px;
@@ -4630,6 +4630,12 @@ html {
   text-decoration: line-through;
 }
 
+.buy-buttons-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
 .amazon-buy-btn {
   display: inline-flex;
   align-items: center;
@@ -4642,12 +4648,39 @@ html {
   font-weight: 600;
   font-size: 16px;
   transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  min-width: 160px;
 }
 
 .amazon-buy-btn:hover {
   background: #e68900;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(255, 153, 0, 0.3);
+  color: white;
+}
+
+.flipkart-buy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: #047bd6;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+  min-width: 160px;
+}
+
+.flipkart-buy-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(4, 123, 214, 0.3);
   color: white;
 }
 
@@ -6340,9 +6373,16 @@ li.feature-point span {
     gap: 8px;
   }
 
-  .amazon-buy-btn {
+  .buy-buttons-wrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .amazon-buy-btn,
+  .flipkart-buy-btn {
     width: 100%;
     justify-content: center;
+    min-width: auto;
   }
 
   .value-card {

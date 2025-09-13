@@ -199,7 +199,7 @@ export default function MEPSCPage() {
                       <img src="/images/icons/icon1.png" alt="MSDE" className="partner-logo-img" />
                     </div>
                     <div className="govt-badge">
-                      <span>Ministry</span>
+                      <span style={{ color: 'white' }}>Ministry</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -228,7 +228,7 @@ export default function MEPSCPage() {
                       />
                     </div>
                     <div className="govt-badge">
-                      <span>Mission</span>
+                      <span style={{ color: 'white' }}>Mission</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -253,7 +253,7 @@ export default function MEPSCPage() {
                       <img src="/images/icons/icon3.png" alt="NCVET" className="partner-logo-img" />
                     </div>
                     <div className="govt-badge">
-                      <span>Council</span>
+                      <span style={{ color: 'white' }}>Council</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -277,7 +277,7 @@ export default function MEPSCPage() {
                       <img src="/images/icons/icon4.png" alt="MEPSC" className="partner-logo-img" />
                     </div>
                     <div className="govt-badge">
-                      <span>PSC</span>
+                      <span style={{ color: 'white' }}>PSC</span>
                     </div>
                   </div>
                   <div className="card-body">
@@ -421,7 +421,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-certificate"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>Govt. Verified</span>
+                      <span style={{ color: 'white' }}>Govt. Verified</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -444,7 +444,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-users"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>NCF Aligned</span>
+                      <span style={{ color: 'white' }}>NCF Aligned</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -467,7 +467,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-brain"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>Industry Ready</span>
+                      <span style={{ color: 'white' }}>Industry Ready</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -490,7 +490,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-chart-line"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>Career Boost</span>
+                      <span style={{ color: 'white' }}>Career Boost</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -513,7 +513,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-book-open"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>NEP 2020</span>
+                      <span style={{ color: 'white' }}>NEP 2020</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -536,7 +536,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-heart"></i>
                     </div>
                     <div className="govt-verification">
-                      <span>Social Impact</span>
+                    <span style={{ color: 'white' }} > Social Impact</span>
                     </div>
                   </div>
                   <div className="card-content">
