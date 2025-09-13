@@ -4,7 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: false, // Enable linting during builds for better code quality
   },
   images: {
-    domains: [], // Add external image domains if needed
+    domains: ['images.unsplash.com', 'ui-avatars.com'], // Add external image domains
     formats: ['image/webp', 'image/avif'], // Enable modern image formats
   },
   // Enable experimental features for better performance

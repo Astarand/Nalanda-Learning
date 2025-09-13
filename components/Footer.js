@@ -24,16 +24,10 @@ export default function Footer() {
                 <h4 className="title">Our Solutions</h4>
                 <ul>
                   <li>
-                    <a href="#">ECCE Teacher Training</a>
+                    <Link href="/mepsc">MEPSC – Skill Training</Link>
                   </li>
                   <li>
-                    <a href="#">AI-Powered Learning Platform</a>
-                  </li>
-                  <li>
-                    <a href="#">Curriculum Development</a>
-                  </li>
-                  <li>
-                    <a href="#">Certification & Assessment Support</a>
+                    <Link href="/b2b-saas">B2B SAAS Platform</Link>
                   </li>
                 </ul>
               </div>
@@ -47,10 +41,10 @@ export default function Footer() {
                     <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <a href="/strategic-partners">Strategic Partners</a>
+                    <Link href="/directors">Teams</Link>
                   </li>
                   <li>
-                    <a href="#">Career</a>
+                    <Link href="/career">Career</Link>
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
@@ -195,11 +189,11 @@ export default function Footer() {
                 </p>
               </div>
               <div className="col-lg-3">
-                <a href="#0" className="policy">
+                <a href="/terms" className="policy">
                   Terms & Condition
                 </a>
                 <span className="policy mx-2">|</span>
-                <a href="#0" className="policy">
+                <a href="/privacy" className="policy">
                   Privacy Policy
                 </a>
               </div>

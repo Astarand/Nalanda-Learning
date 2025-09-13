@@ -845,7 +845,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       {/* Eco-system area end here */}
 
       {/* Video area start here */}

@@ -458,7 +458,7 @@ export default function AboutPage() {
                   <div className="team-details__top-right">
                     <div className="team-details__top-content">
                       <h3 className="team-details__top-name">Tamal Mukherjee</h3>
-                      <p className="team-details__top-title">Founder & CEO</p>
+                      <p className="team-details__top-title">Founder & Director</p>
                       <p className="team-details__top-text-1 mt-5">
                         Tamal Mukherjee is a visionary leader in early childhood education with over
                         15 years of experience transforming educational paradigms across India. As

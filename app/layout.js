@@ -5,14 +5,17 @@ import Script from 'next/script';
 
 export const metadata = {
   title: 'Nalanda Learning - Transforming Education Through Innovation',
-  description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure. MEPSC certified programmes.',
-  keywords: 'education, teacher training, ECCE, MEPSC, early childhood education, AI learning platform, global teaching careers',
+  description:
+    "India's most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure. MEPSC certified programmes.",
+  keywords:
+    'education, teacher training, ECCE, MEPSC, early childhood education, AI learning platform, global teaching careers',
   authors: [{ name: 'Nalanda Learning' }],
   creator: 'Nalanda Learning',
   publisher: 'Nalanda Learning',
   openGraph: {
     title: 'Nalanda Learning - Transforming Education Through Innovation',
-    description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.',
+    description:
+      "India's most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.",
     url: 'https://nalandalearning.in',
     siteName: 'Nalanda Learning',
     type: 'website',
@@ -20,7 +23,8 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Nalanda Learning - Transforming Education Through Innovation',
-    description: 'India\'s most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.',
+    description:
+      "India's most integrated education impact platform connecting early childhood teacher training, global teaching careers, and AI-powered learning infrastructure.",
   },
   robots: {
     index: true,
@@ -48,7 +52,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header />
-        <main>{children}</main>
+        <main role="main">{children}</main>
         <Footer />
         {/* Back to top area */}
         <div className="scroll-up">
@@ -79,14 +83,8 @@ export default function RootLayout({ children }) {
         <Script src="/js/splitting.js" strategy="afterInteractive" />
         <Script src="/js/jquery.waypoints.js" strategy="afterInteractive" />
         <Script src="/js/gsap/gsap.min.js" strategy="afterInteractive" />
-        <Script
-          src="/js/gsap/ScrollTrigger.min.js"
-          strategy="afterInteractive"
-        />
-        <Script
-          src="/js/gsap/ScrollSmoother.min.js"
-          strategy="afterInteractive"
-        />
+        <Script src="/js/gsap/ScrollTrigger.min.js" strategy="afterInteractive" />
+        <Script src="/js/gsap/ScrollSmoother.min.js" strategy="afterInteractive" />
         {/* script.js must load after meanmenu.js */}
         <Script src="/js/script.js" strategy="afterInteractive" />
         <Script src="/js/jquery.validate.min.js" strategy="afterInteractive" />

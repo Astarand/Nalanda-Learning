@@ -1,9 +1,12 @@
 'use client';
 import { useEffect } from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
+import { blogPosts } from '../../lib/blogData';
 
 export default function BlogPage() {
   useEffect(() => {
-    // ✅ Apply data-background images
+    // Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
     bgElements.forEach((el) => {
       const bg = el.getAttribute('data-background');
@@ -11,21 +14,38 @@ export default function BlogPage() {
         el.style.backgroundImage = `url(${bg})`;
       }
     });
+
+    // Initialize animations
+    if (typeof window !== 'undefined') {
+      if (window.WOW) {
+        new window.WOW().init();
+      }
+    }
   }, []);
+
   return (
     <>
-      <div
-        style={{
-          minHeight: '60vh',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <h1>Blog</h1>
-        <p>Coming Soon</p>
-      </div>
+      {/* Breadcrumb area start here */}
+      <section className="breadcrumb-area" data-background="/images/banner/banner-inner.jpg">
+        <div className="container">
+          <div className="breadcrumb__wrp">
+            <div className="breadcrumb__item">
+              <h1 className="title">Blog & Insights</h1>
+              <ul>
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <i className="fa-light fa-angle-right" />
+                </li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Breadcrumb area end here */}
+
     </>
   );
 }
