@@ -24,7 +24,7 @@ const teamData = {
     {
       id: 2,
       name: 'Chirabrata Majumder',
-      designation: 'Co-Founder & CTO',
+      designation: 'Co-Founder',
       image: '/images/team/chirabrata.jpg',
       bio: 'Technology innovator and education enthusiast. IIT graduate with expertise in AI/ML applications for education.',
       experience: '12+ Years',

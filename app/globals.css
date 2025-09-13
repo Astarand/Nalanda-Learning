@@ -3758,8 +3758,8 @@ html {
 }
 
 .enhanced-partner-card .partner-logo {
-  width: 60px;
-  height: 60px;
+  width: 200px;
+  height: 100px;
   background: #f1f5f9;
   border-radius: 12px;
   display: flex;
