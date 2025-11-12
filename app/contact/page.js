@@ -1,11 +1,11 @@
 'use client';
-import { useEffect } from 'react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 export default function ContactPage() {
   useEffect(() => {
     // ✅ Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach((el) => {
+    bgElements.forEach(el => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -112,9 +112,9 @@ export default function ContactPage() {
                     <p className="text mb-0">
                       Nalanda Learning Systems Pvt Ltd
                       <br />
-                      1st Floor, 1/22, Poddar Nagar, Jodhpur Park,
+                      AE-013, Canal Side Rd, A.E. Block sector 1, AE Block, Sector 1
                       <br />
-                      Kolkata, West Bengal 700068, India
+                      Bidhannagar,Kolkata, West Bengal 700068
                     </p>
                   </div>
                 </div>
@@ -131,9 +131,7 @@ export default function ContactPage() {
                   <div className="inner-box flex-grow-1 d-flex flex-column">
                     <h3 className="title">Contact</h3>
                     <p className="text mb-0">
-                      Phone: <a href="tel:+913340601234">+91 33 4060 1234</a>
-                      <br />
-                      Mobile: <a href="tel:+919830012345">+91 98300 12345</a>
+                      Toll-Free Number: <a href="tel:+913340601234">1800 203 3015</a>
                     </p>
                   </div>
                 </div>
@@ -150,9 +148,9 @@ export default function ContactPage() {
                   <div className="inner-box flex-grow-1 d-flex flex-column">
                     <h3 className="title">Email</h3>
                     <p className="text mb-0">
-                      <a href="mailto:info@nalandalearning.com">info@nalandalearning.com</a>
+                      <a href="mailto:info@nalandalearning.com">info@nalandalearning.in</a>
                       <br />
-                      <a href="mailto:support@nalandalearning.com">support@nalandalearning.com</a>
+                      <a href="mailto:support@nalandalearning.com">support@nalandalearning.in</a>
                     </p>
                   </div>
                 </div>
