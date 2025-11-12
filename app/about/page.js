@@ -1,11 +1,11 @@
 'use client';
-import { useEffect } from 'react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 export default function AboutPage() {
   useEffect(() => {
     // ✅ Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach((el) => {
+    bgElements.forEach(el => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -50,17 +50,17 @@ export default function AboutPage() {
 
       // Handle tab switching for project images
       const projectSlides = document.querySelectorAll('.project__slider .swiper-slide');
-      projectSlides.forEach((slide) => {
+      projectSlides.forEach(slide => {
         slide.addEventListener('mouseenter', function () {
           const tabId = this.getAttribute('data-tab');
 
           // Remove active class from all slides
-          projectSlides.forEach((s) => s.classList.remove('active'));
+          projectSlides.forEach(s => s.classList.remove('active'));
           // Add active class to current slide
           this.classList.add('active');
 
           // Hide all images
-          document.querySelectorAll('.project__image .tab-img').forEach((img) => {
+          document.querySelectorAll('.project__image .tab-img').forEach(img => {
             img.classList.remove('active');
           });
 
@@ -120,7 +120,7 @@ export default function AboutPage() {
                   <div className="about-eleven__content">
                     <h4 className="wow splt-txt" data-splitting="">
                       Safeguarding the Future Our Mission in
-                      <br /> the Digital Landscah{' '}
+                      <br /> the Digital Landscape{' '}
                     </h4>
                     <p className="text mt-20">
                       At Nalanda Learning, our mission is to revolutionise education through
@@ -440,7 +440,7 @@ export default function AboutPage() {
       {/* Solution area end here */}
 
       {/*Team Details Start*/}
-      <section className="team-details">
+      {/* <section className="team-details">
         <div className="container-lg pt-130">
           <div className="team-five__wrp">
             <div className="team-details__top pb-70">
@@ -492,11 +492,11 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/*Team Details End*/}
 
       {/* Team Section Seven */}
-      <section className="team-five-area pt-120 pb-120">
+      {/* <section className="team-five-area pt-120 pb-120">
         <div className="container-lg">
           <div className="row g-4 g-lg-5">
             <div
@@ -610,8 +610,7 @@ export default function AboutPage() {
                 <span>Advisor</span>
               </div>
             </div>
-
-            {/* <div
+            <div
               className="col-sm-6 col-xl-4 wow fadeInLeft"
               data-wow-delay="00ms"
               data-wow-duration="1500ms"
@@ -721,10 +720,10 @@ export default function AboutPage() {
                 </h4>
                 <span>Merchandiser</span>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* End Team Section */}
 
       {/* Project area start here */}
@@ -737,7 +736,7 @@ export default function AboutPage() {
                 <a
                   href="#"
                   className="project__item"
-                  onClick={(e) => {
+                  onClick={e => {
                     e.preventDefault();
                     // Open consultation form modal here
                     openConsultationModal();

@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -40,7 +40,7 @@ export default function Footer() {
                   <li>
                     <Link href="/about">About Us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/directors">Teams</Link>
                   </li>
                   <li>
@@ -48,7 +48,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="footer__item">

@@ -1,12 +1,12 @@
 'use client';
-import { useEffect } from 'react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function MEPSCPage() {
   useEffect(() => {
     // Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach((el) => {
+    bgElements.forEach(el => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -71,11 +71,19 @@ export default function MEPSCPage() {
           </div>
           <div className="text-center">
             <div className="simple-cta-buttons">
-              <Link href="#" className="simple-cta-btn primary-btn">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfRQXtsn-3g_9DJJ3ld8hXQgws6CADZbA76fFi5vsFBOHelBQ/viewform"
+                className="simple-cta-btn primary-btn"
+                target="_blank"
+              >
                 <i className="fa-solid fa-user-plus"></i>
-                Enrol Now
+                Enroll Now
               </Link>
-              <Link href="#" className="simple-cta-btn secondary-btn">
+              <Link
+                href="/images/certificates/01_MEPSC-Teacher-Training-Brochure_New.pdf"
+                className="simple-cta-btn secondary-btn"
+                target="_blank"
+              >
                 <i className="fa-solid fa-download"></i>
                 Download Brochure
               </Link>
@@ -103,7 +111,7 @@ export default function MEPSCPage() {
             <div className="certificate-hero-section">
               <div className="certificate-image-container">
                 <img
-                  src="/images/certificates/mepsc-sample-certificate.jpeg"
+                  src="/images/certificates/mepsc-sample-certificate.jpg"
                   alt="MEPSC Sample Certificate"
                   className="main-certificate-image"
                 />
@@ -192,7 +200,7 @@ export default function MEPSCPage() {
 
           <div className="enhanced-government-partnership">
             <div className="row g-4">
-              <div className="col-lg-3 col-md-6">
+              <div className="col-lg-4 col-md-6">
                 <div className="enhanced-partner-card">
                   <div className="card-header">
                     <div className="partner-logo">
@@ -217,7 +225,7 @@ export default function MEPSCPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+              <div className="col-lg-4 col-md-6">
                 <div className="enhanced-partner-card">
                   <div className="card-header">
                     <div className="partner-logo">
@@ -246,7 +254,7 @@ export default function MEPSCPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+              <div className="col-lg-4 col-md-6">
                 <div className="enhanced-partner-card">
                   <div className="card-header">
                     <div className="partner-logo">
@@ -270,7 +278,7 @@ export default function MEPSCPage() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+              {/* <div className="col-lg-3 col-md-6">
                 <div className="enhanced-partner-card">
                   <div className="card-header">
                     <div className="partner-logo">
@@ -294,7 +302,7 @@ export default function MEPSCPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -390,7 +398,11 @@ export default function MEPSCPage() {
               </div>
             </div>
             <div className="text-center">
-              <Link href="#" className="simple-download-btn">
+              <Link
+                href="/images/certificates/01_MEPSC-Teacher-Training-Brochure_New.pdf"
+                target="_blank"
+                className="simple-download-btn"
+              >
                 <i className="fa-solid fa-file-pdf"></i>
                 Download Detailed Curriculum
               </Link>
@@ -501,7 +513,7 @@ export default function MEPSCPage() {
                     </p>
                     <div className="benefit-highlight">
                       <i className="fa-solid fa-trending-up"></i>
-                      <span>40% Salary Increase</span>
+                      <span>Boost Career Opportunity</span>
                     </div>
                   </div>
                 </div>
@@ -536,7 +548,7 @@ export default function MEPSCPage() {
                       <i className="fa-solid fa-heart"></i>
                     </div>
                     <div className="govt-verification">
-                    <span style={{ color: 'white' }} > Social Impact</span>
+                      <span style={{ color: 'white' }}> Social Impact</span>
                     </div>
                   </div>
                   <div className="card-content">
@@ -599,7 +611,11 @@ export default function MEPSCPage() {
               Skill Development Initiative
             </p>
             <div className="highlighted-buttons">
-              <Link href="#" className="highlight-btn primary-highlight">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfRQXtsn-3g_9DJJ3ld8hXQgws6CADZbA76fFi5vsFBOHelBQ/viewform"
+                className="highlight-btn primary-highlight"
+                target="_blank"
+              >
                 <i className="fa-solid fa-user-plus"></i>
                 Enroll Now
               </Link>
@@ -607,7 +623,11 @@ export default function MEPSCPage() {
                 <i className="fa-solid fa-handshake"></i>
                 Partner with Us
               </Link>
-              <Link href="#" className="highlight-btn tertiary-highlight">
+              <Link
+                href="/images/certificates/01_MEPSC-Teacher-Training-Brochure_New.pdf"
+                target="_blank"
+                className="highlight-btn tertiary-highlight"
+              >
                 <i className="fa-solid fa-download"></i>
                 Download Brochure
               </Link>

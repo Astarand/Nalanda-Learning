@@ -1,6 +1,6 @@
 'use client';
-import { useEffect } from 'react';
 import Link from 'next/link';
+import { useEffect } from 'react';
 
 export default function B2BSaaSPage() {
   useEffect(() => {
@@ -18,16 +18,16 @@ export default function B2BSaaSPage() {
       console.log('Found carousels:', bookCarousels.length);
       console.log('Found contents:', bookContents.length);
 
-      bookTabs.forEach((tab) => {
-        tab.addEventListener('click', (e) => {
+      bookTabs.forEach(tab => {
+        tab.addEventListener('click', e => {
           e.preventDefault();
           const tabId = tab.getAttribute('data-tab');
           console.log('Tab clicked:', tabId);
 
           // Remove active class from all tabs, carousels, and contents
-          bookTabs.forEach((t) => t.classList.remove('active'));
-          bookCarousels.forEach((c) => c.classList.remove('active'));
-          bookContents.forEach((c) => c.classList.remove('active'));
+          bookTabs.forEach(t => t.classList.remove('active'));
+          bookCarousels.forEach(c => c.classList.remove('active'));
+          bookContents.forEach(c => c.classList.remove('active'));
 
           // Add active class to clicked tab and corresponding content
           tab.classList.add('active');
@@ -41,7 +41,7 @@ export default function B2BSaaSPage() {
 
       // Carousel functionality
       const carousels = document.querySelectorAll('.book-carousel');
-      carousels.forEach((carousel) => {
+      carousels.forEach(carousel => {
         const images = carousel.querySelectorAll('.book-image');
         const prevBtn = carousel.querySelector('.prev');
         const nextBtn = carousel.querySelector('.next');
@@ -49,14 +49,14 @@ export default function B2BSaaSPage() {
 
         console.log('Carousel images found:', images.length);
 
-        const showImage = (index) => {
+        const showImage = index => {
           images.forEach((img, i) => {
             img.classList.toggle('active', i === index);
           });
         };
 
         if (prevBtn) {
-          prevBtn.addEventListener('click', (e) => {
+          prevBtn.addEventListener('click', e => {
             e.preventDefault();
             currentIndex = currentIndex > 0 ? currentIndex - 1 : images.length - 1;
             showImage(currentIndex);
@@ -65,7 +65,7 @@ export default function B2BSaaSPage() {
         }
 
         if (nextBtn) {
-          nextBtn.addEventListener('click', (e) => {
+          nextBtn.addEventListener('click', e => {
             e.preventDefault();
             currentIndex = currentIndex < images.length - 1 ? currentIndex + 1 : 0;
             showImage(currentIndex);
@@ -81,12 +81,12 @@ export default function B2BSaaSPage() {
     // FAQ Accordion functionality
     const faqItems = document.querySelectorAll('.faq-item');
 
-    faqItems.forEach((item) => {
+    faqItems.forEach(item => {
       const question = item.querySelector('.faq-question');
 
       question.addEventListener('click', () => {
         // Close all other items
-        faqItems.forEach((otherItem) => {
+        faqItems.forEach(otherItem => {
           if (otherItem !== item) {
             otherItem.classList.remove('active');
           }
@@ -100,7 +100,7 @@ export default function B2BSaaSPage() {
     // Form submission handler
     const form = document.querySelector('.saas-contact-form');
     if (form) {
-      form.addEventListener('submit', (e) => {
+      form.addEventListener('submit', e => {
         e.preventDefault();
         // Add form submission logic here
         alert('Thank you for your interest! We will contact you within 24 hours.');
@@ -236,17 +236,17 @@ export default function B2BSaaSPage() {
 
           <div className="books-tabs-container">
             <div className="books-tabs">
-              <button className="book-tab active" data-tab="lower-kg">
-                Lower KG
+              <button className="book-tab active" data-tab="playgroup">
+                PlayGroup
               </button>
               <button className="book-tab" data-tab="nursery">
                 Nursery
               </button>
-              <button className="book-tab" data-tab="playgroup">
-                PlayGroup
+              <button className="book-tab " data-tab="lower-kg">
+                Lower KG
               </button>
               <button className="book-tab" data-tab="senior-kg">
-                Senior KG
+                Upper KG
               </button>
             </div>
 
@@ -254,31 +254,27 @@ export default function B2BSaaSPage() {
               <div className="row align-items-center">
                 <div className="col-lg-6">
                   <div className="book-carousel-container">
-                    <div className="book-carousel active" id="lower-kg-carousel">
+                    {/* 1. PlayGroup Carousel */}
+                    <div className="book-carousel active" id="playgroup-carousel">
                       <div className="carousel-images">
                         <img
-                          src="/images/lower-kg-book-image/11.png"
-                          alt="Lower KG Book 1"
+                          src="/images/playgroup-book-image/1.png"
+                          alt="PlayGroup Book 1"
                           className="book-image active"
                         />
                         <img
-                          src="/images/lower-kg-book-image/12.png"
-                          alt="Lower KG Book 2"
+                          src="/images/playgroup-book-image/2.png"
+                          alt="PlayGroup Book 2"
                           className="book-image"
                         />
                         <img
-                          src="/images/lower-kg-book-image/13.png"
-                          alt="Lower KG Book 3"
+                          src="/images/playgroup-book-image/3.png"
+                          alt="PlayGroup Book 3"
                           className="book-image"
                         />
                         <img
-                          src="/images/lower-kg-book-image/14.png"
-                          alt="Lower KG Book 4"
-                          className="book-image"
-                        />
-                        <img
-                          src="/images/lower-kg-book-image/15.png"
-                          alt="Lower KG Book 5"
+                          src="/images/playgroup-book-image/4.png"
+                          alt="PlayGroup Book 4"
                           className="book-image"
                         />
                       </div>
@@ -292,6 +288,7 @@ export default function B2BSaaSPage() {
                       </div>
                     </div>
 
+                    {/* 2. Nursery Carousel */}
                     <div className="book-carousel" id="nursery-carousel">
                       <div className="carousel-images">
                         <img
@@ -335,26 +332,32 @@ export default function B2BSaaSPage() {
                       </div>
                     </div>
 
-                    <div className="book-carousel" id="playgroup-carousel">
+                    {/* 3. Lower KG Carousel */}
+                    <div className="book-carousel" id="lower-kg-carousel">
                       <div className="carousel-images">
                         <img
-                          src="/images/playgroup-book-image/1.png"
-                          alt="PlayGroup Book 1"
+                          src="/images/lower-kg-book-image/11.png"
+                          alt="Lower KG Book 1"
                           className="book-image active"
                         />
                         <img
-                          src="/images/playgroup-book-image/2.png"
-                          alt="PlayGroup Book 2"
+                          src="/images/lower-kg-book-image/12.png"
+                          alt="Lower KG Book 2"
                           className="book-image"
                         />
                         <img
-                          src="/images/playgroup-book-image/3.png"
-                          alt="PlayGroup Book 3"
+                          src="/images/lower-kg-book-image/13.png"
+                          alt="Lower KG Book 3"
                           className="book-image"
                         />
                         <img
-                          src="/images/playgroup-book-image/4.png"
-                          alt="PlayGroup Book 4"
+                          src="/images/lower-kg-book-image/14.png"
+                          alt="Lower KG Book 4"
+                          className="book-image"
+                        />
+                        <img
+                          src="/images/lower-kg-book-image/15.png"
+                          alt="Lower KG Book 5"
                           className="book-image"
                         />
                       </div>
@@ -368,26 +371,27 @@ export default function B2BSaaSPage() {
                       </div>
                     </div>
 
+                    {/* 4. Upper KG (Senior KG) Carousel */}
                     <div className="book-carousel" id="senior-kg-carousel">
                       <div className="carousel-images">
                         <img
                           src="/images/senior-kg-book-image/16.png"
-                          alt="Senior KG Book 1"
+                          alt="Upper KG Book 1"
                           className="book-image active"
                         />
                         <img
                           src="/images/senior-kg-book-image/17.png"
-                          alt="Senior KG Book 2"
+                          alt="Upper KG Book 2"
                           className="book-image"
                         />
                         <img
                           src="/images/senior-kg-book-image/18.png"
-                          alt="Senior KG Book 3"
+                          alt="Upper KG Book 3"
                           className="book-image"
                         />
                         <img
                           src="/images/senior-kg-book-image/19.png"
-                          alt="Senior KG Book 4"
+                          alt="Upper KG Book 4"
                           className="book-image"
                         />
                       </div>
@@ -405,92 +409,8 @@ export default function B2BSaaSPage() {
 
                 <div className="col-lg-6">
                   <div className="book-description">
-                    <div className="book-content active" id="lower-kg-content">
-                      <h3>Lower KG Books</h3>
-                      <p>
-                        Specially designed for children aged 3-4 years, our Lower KG books focus on
-                        foundational skills development through engaging activities and colorful
-                        illustrations.
-                      </p>
-                      <ul className="book-features">
-                        <li>
-                          <i className="fa-solid fa-check"></i> Age-appropriate learning activities
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Motor skills development exercises
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Basic alphabet and number
-                          recognition
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Trilingual support
-                          (English/Hindi/Bengali)
-                        </li>
-                      </ul>
-
-                      <div className="buy-buttons-wrapper">
-                        <Link
-                          href="https://amazon.in/nalanda-lower-kg"
-                          className="amazon-buy-btn"
-                          target="_blank"
-                        >
-                          <i className="fa-brands fa-amazon"></i>
-                          Buy on Amazon
-                        </Link>
-                        <Link
-                          href="https://flipkart.com/nalanda-lower-kg"
-                          className="flipkart-buy-btn"
-                          target="_blank"
-                        >
-                          <i className="fa-solid fa-shopping-cart"></i>
-                          Buy on Flipkart
-                        </Link>
-                      </div>
-                    </div>
-
-                    <div className="book-content" id="nursery-content">
-                      <h3>Nursery Books</h3>
-                      <p>
-                        Perfect for children aged 4-5 years, our Nursery books introduce structured
-                        learning while maintaining the joy of discovery and exploration.
-                      </p>
-                      <ul className="book-features">
-                        <li>
-                          <i className="fa-solid fa-check"></i> Structured learning approach
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Pre-writing and pre-math skills
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Social and emotional development
-                        </li>
-                        <li>
-                          <i className="fa-solid fa-check"></i> Interactive storytelling elements
-                        </li>
-                      </ul>
-
-                      <div className="buy-buttons-wrapper">
-                        <Link
-                          href="https://amazon.in/nalanda-nursery"
-                          className="amazon-buy-btn"
-                          target="_blank"
-                        >
-                          <i className="fa-brands fa-amazon"></i>
-                          Buy on Amazon
-                        </Link>
-                        <Link
-                          href="https://flipkart.com/nalanda-nursery"
-                          className="flipkart-buy-btn"
-                          target="_blank"
-                        >
-                          <i className="fa-solid fa-shopping-cart"></i>
-                          Buy on Flipkart
-                        </Link>
-                      </div>
-                    </div>
-
-                    <div className="book-content" id="playgroup-content">
+                    {/* 1. PlayGroup Content */}
+                    <div className="book-content active" id="playgroup-content">
                       <h3>PlayGroup Books</h3>
                       <p>
                         Designed for children aged 2-3 years, our PlayGroup books focus on sensory
@@ -528,13 +448,125 @@ export default function B2BSaaSPage() {
                           <i className="fa-solid fa-shopping-cart"></i>
                           Buy on Flipkart
                         </Link>
+                        <Link
+                          href="https://mypustak.com/nalanda-playgroup"
+                          className="mypustak-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-book"></i>
+                          Buy on MyPustak
+                        </Link>
                       </div>
                     </div>
 
-                    <div className="book-content" id="senior-kg-content">
-                      <h3>Senior KG Books</h3>
+                    {/* 2. Nursery Content */}
+                    <div className="book-content" id="nursery-content">
+                      <h3>Nursery Books</h3>
                       <p>
-                        For children aged 5-6 years, our Senior KG books prepare students for formal
+                        Perfect for children aged 3-4 years, our Nursery books introduce structured
+                        learning while maintaining the joy of discovery and exploration.
+                      </p>
+                      <ul className="book-features">
+                        <li>
+                          <i className="fa-solid fa-check"></i> Structured learning approach
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Pre-writing and pre-math skills
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Social and emotional development
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Interactive storytelling elements
+                        </li>
+                      </ul>
+
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-nursery"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-nursery"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                        <Link
+                          href="https://mypustak.com/nalanda-nursery"
+                          className="mypustak-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-book"></i>
+                          Buy on MyPustak
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* 3. Lower KG Content */}
+                    <div className="book-content" id="lower-kg-content">
+                      <h3>Lower KG Books</h3>
+                      <p>
+                        Specially designed for children aged 4-5 years, our Lower KG books focus on
+                        foundational skills development through engaging activities and colorful
+                        illustrations.
+                      </p>
+                      <ul className="book-features">
+                        <li>
+                          <i className="fa-solid fa-check"></i> Age-appropriate learning activities
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Motor skills development exercises
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Basic alphabet and number
+                          recognition
+                        </li>
+                        <li>
+                          <i className="fa-solid fa-check"></i> Trilingual support
+                          (English/Hindi/Bengali)
+                        </li>
+                      </ul>
+
+                      <div className="buy-buttons-wrapper">
+                        <Link
+                          href="https://amazon.in/nalanda-lower-kg"
+                          className="amazon-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-brands fa-amazon"></i>
+                          Buy on Amazon
+                        </Link>
+                        <Link
+                          href="https://flipkart.com/nalanda-lower-kg"
+                          className="flipkart-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-shopping-cart"></i>
+                          Buy on Flipkart
+                        </Link>
+                        <Link
+                          href="https://mypustak.com/nalanda-lower-kg"
+                          className="mypustak-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-book"></i>
+                          Buy on MyPustak
+                        </Link>
+                      </div>
+                    </div>
+
+                    {/* 4. Upper KG (Senior KG) Content */}
+                    <div className="book-content" id="senior-kg-content">
+                      <h3>Upper KG Books</h3>
+                      <p>
+                        For children aged 5-6 years, our Upper KG books prepare students for formal
                         schooling with advanced pre-academic skills and school readiness activities.
                       </p>
                       <ul className="book-features">
@@ -567,6 +599,14 @@ export default function B2BSaaSPage() {
                         >
                           <i className="fa-solid fa-shopping-cart"></i>
                           Buy on Flipkart
+                        </Link>
+                        <Link
+                          href="https://mypustak.com/nalanda-senior-kg"
+                          className="mypustak-buy-btn"
+                          target="_blank"
+                        >
+                          <i className="fa-solid fa-book"></i>
+                          Buy on MyPustak
                         </Link>
                       </div>
                     </div>
@@ -926,6 +966,17 @@ export default function B2BSaaSPage() {
                     <span>Custom implementation roadmap</span>
                   </div>
                 </div>
+              </div>
+              <div className="download-brochure-section mt-40">
+                <Link
+                  href="/brochure/nalanda-b2b-saas-brochure.pdf"
+                  className="simple-download-btn text-center d-block mx-auto"
+                  style={{ width: '350px' }}
+                  target="_blank"
+                >
+                  <i className="fa-solid fa-download"></i>
+                  &nbsp; Download Brochure
+                </Link>
               </div>
             </div>
 

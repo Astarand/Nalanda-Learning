@@ -1,6 +1,6 @@
 'use client';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
@@ -159,7 +159,7 @@ export default function Header() {
                       </li>
                     </ul>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/directors">Teams</Link>
                   </li>
                   <li>
@@ -173,7 +173,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link href="/blog">Blog</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/contact">Contact</Link>
                   </li>

@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 
 export default function HomePage() {
   const [tab, setTab] = useState(1);
@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     // ✅ Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach((el) => {
+    bgElements.forEach(el => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -105,6 +105,28 @@ export default function HomePage() {
                   data-animation="fadeInUp"
                   data-delay="1s"
                   aria-label="Discover our work with PSACWA"
+                >
+                  <i className="fa-thin fa-arrow-up-right" />
+                </a>
+              </div>
+            </div>
+            <div className="swiper-slide">
+              <div className="slide-bg" data-background="/images/banner/banner-image4.jpg" />
+              <div className="banner-six__content">
+                <h2 className="title" data-animation="fadeInUp" data-delay=".3s">
+                  A single platform for efficient Pre-School Learning and Management
+                </h2>
+                <p className="text" data-animation="fadeInUp" data-delay=".5s">
+                  Integrated B2B SaaS platform designed for efficient Pre-School learning and
+                  management, integrating curriculum delivery, teacher support, child progress
+                  tracking, parent communication, and center operations.
+                </p>
+                <a
+                  href="/mepsc"
+                  className="arry-btn"
+                  data-animation="fadeInUp"
+                  data-delay="1s"
+                  aria-label="View the MEPSC programme"
                 >
                   <i className="fa-thin fa-arrow-up-right" />
                 </a>
