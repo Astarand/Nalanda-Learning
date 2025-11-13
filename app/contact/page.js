@@ -114,7 +114,7 @@ export default function ContactPage() {
                       <br />
                       AE-013, Canal Side Rd, A.E. Block sector 1, AE Block, Sector 1
                       <br />
-                      Bidhannagar,Kolkata, West Bengal 700068
+                      Bidhannagar,Kolkata, West Bengal 700064
                     </p>
                   </div>
                 </div>

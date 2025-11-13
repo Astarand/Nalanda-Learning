@@ -60,7 +60,7 @@ export default function Footer() {
                     <a href="#0">
                       {' '}
                       AE-013, Canal Side Rd, A.E. Block sector 1, AE Block, Sector 1,
-                      Bidhannagar,Kolkata, West Bengal 700068
+                      Bidhannagar,Kolkata, West Bengal 700064
                     </a>
                   </li>
                   <li>
