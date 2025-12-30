@@ -512,7 +512,7 @@ export default function MEPSCPage() {
                       in the rapidly growing early childhood education sector.
                     </p>
                     <div className="benefit-highlight">
-                      <i className="fa-solid fa-trending-up"></i>
+                      <i className="fa-solid fa-chart-line"></i>
                       <span>Boost Career Opportunity</span>
                     </div>
                   </div>

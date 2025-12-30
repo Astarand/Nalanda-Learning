@@ -11,10 +11,10 @@ export default function Header() {
           <div className="header-top__wrp">
             <ul className="header-top__links">
               <li>
-                <i className="fa-light fa-phone"></i> <a href="tel:18002033015">1800 203 3015</a>
+                <i className="fa-solid fa-phone"></i> <a href="tel:18002033015">1800 203 3015</a>
               </li>
               <li>
-                <i className="fa-light fa-envelope-open-text"></i>{' '}
+                <i className="fa-solid fa-envelope"></i>{' '}
                 <a href="mailto:contact@nalandalearning.in">contact@nalandalearning.in</a>
               </li>
             </ul>
@@ -202,8 +202,13 @@ export default function Header() {
             {' '}
             <Image src="/images/logo/nalanda_logo_white.png" alt="logo" width={110} height={80} />
           </Link>
-          <button type="button" className="btn-close" data-bs-dismiss="offcanvas">
-            <i className="fa-regular fa-xmark" />
+          <button
+            type="button"
+            className="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          >
+            <i className="fa-solid fa-xmark" />
           </button>
         </div>
         <div className="offcanvas-body sidebar__body">

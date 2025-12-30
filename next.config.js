@@ -1,13 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
-    ignoreDuringBuilds: false, // Enable linting during builds for better code quality
+    ignoreDuringBuilds: false,
   },
   images: {
-    domains: ['images.unsplash.com', 'ui-avatars.com'], // Add external image domains
-    formats: ['image/webp', 'image/avif'], // Enable modern image formats
+    domains: ['images.unsplash.com', 'ui-avatars.com'],
+    formats: ['image/webp', 'image/avif'],
   },
-  // Enable experimental features for better performance
   experimental: {
     optimizeCss: true,
   },

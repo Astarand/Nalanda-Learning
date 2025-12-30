@@ -8,7 +8,7 @@ export default function HomePage() {
   useEffect(() => {
     // ✅ Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach(el => {
+    bgElements.forEach((el) => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -537,7 +537,7 @@ export default function HomePage() {
       {/* Horizontal accordion area end here */}
 
       {/* Choose area start here */}
-      <section className="choose-one-area bg-sub pt-130">
+      <section className="choose-one-area bg-sub pt-100">
         <div className="row g-0">
           <div className="col-xl-7 order-2 order-xl-1">
             <div className="choose-one__wrp">
@@ -880,7 +880,7 @@ export default function HomePage() {
           <div className="video__btn">
             <div className="btn-video video-pulse">
               <a className="video-popup" href="/images/video/video.mp4">
-                <i className="fa-sharp fa-light fa-play" />
+                <i className="fa-solid fa-play" />
               </a>
             </div>
           </div>

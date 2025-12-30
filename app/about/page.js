@@ -5,7 +5,7 @@ export default function AboutPage() {
   useEffect(() => {
     // ✅ Apply data-background images
     const bgElements = document.querySelectorAll('[data-background]');
-    bgElements.forEach(el => {
+    bgElements.forEach((el) => {
       const bg = el.getAttribute('data-background');
       if (bg) {
         el.style.backgroundImage = `url(${bg})`;
@@ -16,7 +16,7 @@ export default function AboutPage() {
     if (window.Swiper) {
       new window.Swiper('.project__slider', {
         spaceBetween: 0,
-        speed: 3000,
+        speed: 1000,
         pagination: false,
         navigation: {
           nextEl: '.project__arry-next',
@@ -26,12 +26,20 @@ export default function AboutPage() {
         keyboard: true,
         autoplay: {
           delay: 3000,
-          disableOnInteraction: true,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
         },
         loop: true,
+        touchEventsTarget: 'container',
+        simulateTouch: true,
+        allowTouchMove: true,
+        touchRatio: 1,
+        touchAngle: 45,
+        grabCursor: true,
         breakpoints: {
           0: {
             slidesPerView: 1,
+            spaceBetween: 10,
           },
           480: {
             slidesPerView: 2,
@@ -50,17 +58,17 @@ export default function AboutPage() {
 
       // Handle tab switching for project images
       const projectSlides = document.querySelectorAll('.project__slider .swiper-slide');
-      projectSlides.forEach(slide => {
+      projectSlides.forEach((slide) => {
         slide.addEventListener('mouseenter', function () {
           const tabId = this.getAttribute('data-tab');
 
           // Remove active class from all slides
-          projectSlides.forEach(s => s.classList.remove('active'));
+          projectSlides.forEach((s) => s.classList.remove('active'));
           // Add active class to current slide
           this.classList.add('active');
 
           // Hide all images
-          document.querySelectorAll('.project__image .tab-img').forEach(img => {
+          document.querySelectorAll('.project__image .tab-img').forEach((img) => {
             img.classList.remove('active');
           });
 
@@ -736,7 +744,7 @@ export default function AboutPage() {
                 <a
                   href="#"
                   className="project__item"
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     // Open consultation form modal here
                     openConsultationModal();

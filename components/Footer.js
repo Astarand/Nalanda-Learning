@@ -71,9 +71,9 @@ export default function Footer() {
                   </li>
                 </ul>
                 <h4 className="title mt-3">Follow Us</h4>
-                <div className="socials">
-                  <a href="#" aria-label="Twitter">
-                    <i className="fab fa-twitter"></i>
+                <div className="footer-socials">
+                  <a href="#" aria-label="X (Twitter)" className="x-icon">
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                   <a href="#" aria-label="Facebook">
                     <i className="fab fa-facebook-f"></i>
@@ -84,7 +84,7 @@ export default function Footer() {
                   <a href="#" aria-label="Instagram">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a className="pe-0" href="#" aria-label="YouTube">
+                  <a href="#" aria-label="YouTube">
                     <i className="fab fa-youtube"></i>
                   </a>
                 </div>
@@ -98,7 +98,7 @@ export default function Footer() {
           <div className="">
             <div className="row">
               <div className="col-lg-9">
-                <p className="text-left">
+                <p className="text-left footer-copyright-text">
                   &copy; 2025 <a href="#0">Nalanda Learning</a> Design & Developed by &nbsp;
                   <a href="#">ClicknGo</a>
                 </p>

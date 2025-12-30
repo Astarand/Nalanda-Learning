@@ -40,6 +40,7 @@ a {
     color-scheme: dark;
   }
 }
+
 /* Professional Carousel Styles */
 .professional-carousel {
   position: relative;
@@ -145,6 +146,7 @@ a {
     left: 15px;
   }
 }
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .professional-carousel {
@@ -175,6 +177,7 @@ a {
     bottom: 15px !important;
   }
 }
+
 /* Video Thumbnail and Modal Styles */
 .video-thumbnail-container:hover .video-overlay {
   background: rgba(0, 0, 0, 0.5) !important;
@@ -197,6 +200,7 @@ a {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -207,6 +211,7 @@ a {
     transform: scale(0.9);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -242,6 +247,7 @@ a {
     fontsize: 18px !important;
   }
 }
+
 /* Career Page Styles */
 .career-hero__content .career-stats .stat-item {
   padding: 20px;
@@ -562,12 +568,15 @@ a {
 .blog-single__share .share-btn.facebook {
   background: #3b5998;
 }
+
 .blog-single__share .share-btn.twitter {
   background: #1da1f2;
 }
+
 .blog-single__share .share-btn.linkedin {
   background: #0077b5;
 }
+
 .blog-single__share .share-btn.whatsapp {
   background: #25d366;
 }
@@ -946,6 +955,7 @@ a {
     gap: 8px;
   }
 }
+
 /* Blog Listing Page Styles */
 .blog-hero-area .section-header p {
   max-width: 800px;
@@ -1557,6 +1567,7 @@ a {
   white-space: nowrap;
   border: 0;
 }
+
 /* How to Apply Section Styles */
 .how-to-apply-area {
   background: var(--main-bg);
@@ -1676,7 +1687,8 @@ html {
 }
 
 .btn-outline.btn-lg {
-  padding: 13px 33px; /* Account for border */
+  padding: 13px 33px;
+  /* Account for border */
 }
 
 /* Responsive adjustments for How to Apply section */
@@ -1720,6 +1732,7 @@ html {
     margin-bottom: 20px;
   }
 }
+
 /* Enhanced Team Card Styles */
 .team-card {
   position: relative;
@@ -1995,6 +2008,7 @@ html {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
   .leadership-card,
   .executive-card {
     padding: 20px;
@@ -2035,7 +2049,7 @@ html {
   opacity: 0.7;
 }
 
-.team-leadership-area > .container {
+.team-leadership-area>.container {
   position: relative;
   z-index: 1;
 }
@@ -2056,12 +2070,18 @@ html {
   content: '';
   position: absolute;
   bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   width: 60px;
   height: 3px;
   background: linear-gradient(90deg, #6366f1, #8b5cf6);
   border-radius: 2px;
+}
+
+/* Hide section-header::after on desktop view */
+@media (min-width: 992px) {
+  .section-header::after {
+    display: none;
+  }
 }
 
 /* Animation enhancements */
@@ -2070,6 +2090,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -2088,6 +2109,7 @@ html {
 .fadeInLeft {
   animation-name: fadeInUp;
 }
+
 /* Social Links Styling */
 .socials {
   position: absolute;
@@ -2322,6 +2344,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -2356,6 +2379,7 @@ html {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -2383,6 +2407,7 @@ html {
 .text-transparent {
   color: transparent;
 }
+
 /* Organizational Chart Styles */
 .org-chart-container {
   position: relative;
@@ -2438,14 +2463,12 @@ html {
   transform: translateX(-50%);
   width: 2px;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(99, 102, 241, 0.3) 10%,
-    rgba(99, 102, 241, 0.5) 50%,
-    rgba(156, 163, 175, 0.3) 90%,
-    transparent 100%
-  );
+  background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(99, 102, 241, 0.3) 10%,
+      rgba(99, 102, 241, 0.5) 50%,
+      rgba(156, 163, 175, 0.3) 90%,
+      transparent 100%);
   z-index: 0;
 }
 
@@ -2489,7 +2512,7 @@ html {
   }
 
   /* Stack vertically on mobile */
-  .level-container > div {
+  .level-container>div {
     flex-direction: column;
     align-items: center;
     gap: 1rem !important;
@@ -2518,6 +2541,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -2562,24 +2586,31 @@ html {
 .dept-leadership {
   border-left: 4px solid #6366f1;
 }
+
 .dept-technology {
   border-left: 4px solid #3b82f6;
 }
+
 .dept-academic {
   border-left: 4px solid #f59e0b;
 }
+
 .dept-operations {
   border-left: 4px solid #10b981;
 }
+
 .dept-marketing {
   border-left: 4px solid #059669;
 }
+
 .dept-finance {
   border-left: 4px solid #6b7280;
 }
+
 .dept-partnerships {
   border-left: 4px solid #8b5cf6;
 }
+
 .dept-advisory {
   border-left: 4px solid #dc2626;
 }
@@ -2610,6 +2641,7 @@ html {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
@@ -2658,11 +2690,13 @@ html {
 
 /* Pulse animation for connection points */
 @keyframes pulse {
+
   0%,
   100% {
     opacity: 1;
     transform: scale(1);
   }
+
   50% {
     opacity: 0.7;
     transform: scale(1.1);
@@ -2672,6 +2706,7 @@ html {
 .connection-point {
   animation: pulse 2s infinite;
 }
+
 /* Teams Page Styles - Simple & Clean */
 
 /* Teams Section Spacing */
@@ -2894,6 +2929,7 @@ html {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -3001,6 +3037,7 @@ html {
     padding: 1rem 0.75rem;
   }
 }
+
 /* MEPSC Page Styles - Professional & Clean */
 
 /* Government Icon Styling */
@@ -4166,6 +4203,7 @@ html {
     font-size: 16px;
   }
 }
+
 /* Final CTA Section with White Background */
 .final-cta-section {
   background: white;
@@ -4301,6 +4339,7 @@ html {
     font-size: 24px;
   }
 }
+
 /* Responsive updates for certificate highlights row layout */
 @media (max-width: 768px) {
   .certification-highlights .row {
@@ -4364,6 +4403,7 @@ html {
     font-size: 12px;
   }
 }
+
 /* B2B SaaS Platform Page Styles */
 
 /* Introduction Section */
@@ -4584,7 +4624,7 @@ html {
   margin-bottom: 20px;
 }
 
-.book-content > p {
+.book-content>p {
   font-size: 16px;
   color: #64748b;
   line-height: 1.6;
@@ -5297,9 +5337,11 @@ li.feature-point span {
   0% {
     box-shadow: 0 0 0 0 rgba(30, 64, 175, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba(30, 64, 175, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(30, 64, 175, 0);
   }
@@ -5603,7 +5645,7 @@ li.feature-point span {
   line-height: 1.3;
 }
 
-.pillar-content > p {
+.pillar-content>p {
   font-size: 16px;
   color: #64748b;
   margin-bottom: 25px;
@@ -6207,6 +6249,7 @@ li.feature-point span {
     padding: 25px 20px;
   }
 }
+
 /* B2B SaaS Responsive Design */
 @media (max-width: 768px) {
   .intro-title {
@@ -6226,6 +6269,7 @@ li.feature-point span {
     height: 240px;
     margin-bottom: 20px;
   }
+
   .books-tabs {
     gap: 10px;
   }
@@ -6419,6 +6463,7 @@ li.feature-point span {
     font-size: 24px;
   }
 }
+
 /* Enhanced Worksheets Responsive */
 @media (max-width: 576px) {
   .worksheets-content-simple h2 {
@@ -6463,5 +6508,165 @@ li.feature-point span {
   .floating-badge {
     font-size: 11px;
     padding: 8px 12px;
+  }
+}
+
+/* ========================================
+   CUSTOM MOBILE ADJUSTMENTS
+   User-requested mobile changes
+   ======================================== */
+
+/* Hide service section images in mobile view */
+@media (max-width: 768px) {
+  .hzAccordion__item .content .wrp .image {
+    display: none !important;
+  }
+
+  /* Remove bottom padding from hzAccordion-area in mobile */
+  .hzAccordion-area.pb-130 {
+    padding-bottom: 0 !important;
+  }
+
+  /* Remove top padding from choose-one-area in mobile */
+  .choose-one-area.pt-100 {
+    padding-top: 0 !important;
+  }
+
+  /* Stack tab buttons vertically in mobile with better visibility */
+  .choose__tab .nav-tabs {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 12px;
+    border-bottom: none !important;
+  }
+
+  .choose__tab .nav-tabs .nav-item {
+    width: 100%;
+  }
+
+  .choose__tab .nav-tabs .nav-link {
+    width: 100% !important;
+    text-align: center !important;
+    border-radius: 10px !important;
+    padding: 16px 24px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    background: transparent !important;
+    color: #031f4e !important;
+    border: 2px solid #031f4e !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+    margin-bottom: 0 !important;
+  }
+
+  .choose__tab .nav-tabs .nav-link:hover,
+  .choose__tab .nav-tabs .nav-link:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(3, 31, 78, 0.2) !important;
+    background: transparent !important;
+    color: #031f4e !important;
+    border: 2px solid #031f4e !important;
+    isolation: unset !important;
+  }
+
+  .choose__tab .nav-tabs .nav-link.active,
+  .choose__tab .nav-tabs .nav-item.show .nav-link {
+    background: #031f4e !important;
+    color: white !important;
+    border: 2px solid #031f4e !important;
+    box-shadow: 0 4px 15px rgba(3, 31, 78, 0.3) !important;
+  }
+}
+
+/* Section header left alignment for both mobile and desktop */
+.section-header::after {
+  left: 0 !important;
+  transform: none !important;
+}
+
+/* Footer Social Icons Styling */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white !important;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-socials a:hover {
+  background: white;
+  color: #031f4e !important;
+  transform: translateY(-3px);
+}
+
+.footer-socials a.x-icon span {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Footer Copyright Text Mobile Styling */
+@media (max-width: 768px) {
+  .footer-copyright-text {
+    font-size: 12px !important;
+  }
+
+  /* Reduce footer padding in mobile */
+  .footer__wrp.pt-130 {
+    padding-top: 40px !important;
+  }
+
+  .footer__wrp.pb-130 {
+    padding-bottom: 40px !important;
+  }
+
+  /* MEPSC Page - Certification benefits left align in mobile */
+  .certification-benefits {
+    text-align: left !important;
+  }
+
+  .certification-benefits h4 {
+    text-align: left !important;
+  }
+
+  .benefits-list {
+    text-align: left !important;
+  }
+
+  .benefit-point {
+    text-align: left !important;
+    justify-content: flex-start !important;
+  }
+
+  /* B2B SaaS Page - Intro title and subtitle mobile styling */
+  .intro-title {
+    font-size: 24px !important;
+    line-height: 1.3 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .intro-subtitle {
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 20px !important;
+  }
+
+  .intro-description {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin-top: 20px !important;
   }
 }
